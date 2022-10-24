@@ -1,0 +1,71 @@
+<html lang="pt">
+
+<head>
+
+    <title>Java SE 17</title>
+    
+    <meta charset="utf-8">
+    <meta name="author" content="Duarte Neves">
+
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="tipos_condicoes_ciclos.html">Anterior</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="row">
+            <div style="flex: 0 0 auto; padding-top: 15px;">
+                <img class="icon" alt="" src="../images/java_logo.png"  title="Boolean.java" />
+            </div>            
+            <div><h1>Expressões booleanas</h1></div>            
+        </div>
+
+        <ul>
+            <li>
+                <p>O Java disponibilza um conjuntos de operadores boolean que nos permitem operar sobre tipos primitivos. 
+                    O resultado da aplicação desses operadores ou dessas comparações resulta em verdadeiro ou falso, true ou false.</p>
+            </li>
+            <li>
+                <p>O uso de parenteses serve apenas para facilitar a leitura, outras vezes é mesmo necessário.</p>
+            </li>
+
+        </ul>
+
+        <img class="w-512" alt="" src="../images/tipos_condicoes_ciclos/boolean_operadores.png" />
+
+
+        <ul>
+            <li>
+                <p>Existem dois tipos de expressões booleanas:</p>
+                <ul>
+                    <li>Shor-Circuit Evaluation - designa-se quando na expressão permite não considerar o que é apresentado à direta dessa expressão, ou seja,
+                    o resultado pode ser obtido a partir da avaliação da expressão apenas com o lado esquerdo da mesma.</li>
+                    <li>Full-Circuit Evaluation - como o nome indicada e em oposição à definição anterior, 
+                        é uma expressão que tem a necessidade da avaliação completa da sua expressão.</li>
+                </ul>
+            </li>
+            <li>
+                <p>Nos exemplos presentes, podemos verificar que não existe a necessidade de avaliar a expressão à diretia quando à esquerda do operador && a avaliação resultou em false ou
+                    avaliar uma expressão com o operador || quando a avaliação à esquerda resultou em true.</p>
+            </li>
+
+        </ul>
+
+        <img class="w-768" alt="" src="../images/tipos_condicoes_ciclos/boolean_eval.png" />        
+
+    </main>
+
+</body>
+
+</html>

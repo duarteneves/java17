@@ -1,0 +1,112 @@
+<html lang="pt">
+
+<head>
+
+    <title>Java SE 17</title>
+    
+    <meta charset="utf-8">
+    <meta name="author" content="Duarte Neves">
+
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="texto_datas_numeros.html">Anterior</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="row">
+            <div style="flex: 0 0 auto; padding-top: 15px;">
+                <img class="icon" alt="" src="../images/java_logo.png" title="Text.java" />
+            </div>            
+            <div><h1>Classes String e StringBuilder</h1></div>            
+        </div>
+
+        <h2>Inicialização de strings</h2>
+
+        <ul>
+            <li>
+                <p>Representa uma sequência de caracteres. Não é um tipo primitivo, é como outro objeto Java.</p>
+            </li>
+            <li>
+                <p>Tem um modo único de ser inicializada, sem o new. Mais, não devemos mesmo fazer new String().</p>
+            </li>
+            <li>
+                <p>O Java otimiza a gestão de memória de strings.</p>
+            </li>
+        </ul>
+
+        <img class="w-768" alt="" src="../images/texto_datas_numeros/string_init.png" />
+
+
+        <h2>Operações sobre strings</h2>
+
+        <ul>
+            <li>
+                <p>Objetos String são imutáveis, ou seja, são inalteráveis.</p>
+            </li>
+            <li>
+                <p>A API da classe String disponibiliza com um conjunto de métodos que retornam sempre uma nova String, 
+                    mas não alteram a String original.</p>
+            </li>
+            <li>
+                <p>Por uma questão de conviniência podemos uar o operador + em vez do método concat, 
+                    mas cuidado, o símbolo + é também um operador aritmético.</p>
+            </li>
+        </ul>
+
+        <img class="w-768" alt="" src="../images/texto_datas_numeros/string_oper.png" />       
+
+
+        <h2>Indexação de strings</h2>
+
+        <ul>
+            <li>
+                <p>Sendo uma String uma sequência de caracteres, esses caracteres podem ser acedidos individualmente. O 1º caracter encontra-se no índice 0 da sequência e o último caracter pode ser encontrado no último índice que é igual ao comprimento da sequência - 1.</p>
+            </li>
+            <li>
+                <p>Os métodos substring(), indexOf(), lastIndexOf() e charAt() permitem-nos trabalhar uma string tendo por base a identificação dos índices da sequência.</p>
+            </li>
+            <li>
+                <p>O método substring, que recebe 2 argumentos, dois índices, o inicial e o final, não os considera da mesma forma. 
+                    O índice inicial é inclusivo, enquanto que o índice final é exclusivo.</p>
+            </li>
+            <li>
+                <p>Os métodos indexOf ou lastIndexOf retornam -1 quando o caracter identificado não existe na string.</p>
+            </li>
+            <li>
+                <p>Quando o índice identificado não é válido, ou seja, é inferior a 0 ou superior ao tamanhao da sequência, é lançada uma exceção, StringIndexOutOfBoundsException.</p>
+            </li>            
+        </ul>
+
+        <img class="w-768" alt="" src="../images/texto_datas_numeros/string_index.png" />
+
+
+        <h2>StringBuilder</h2>
+
+        <ul>
+            <li>
+                <p>Os objetos da classe StringBuilder são mutáveis.</p>
+            </li>
+            <li>
+                <p>Disponibiliza os métodos substring, indexOf e charAt, mas também os métodos append, insert, delete e reverse que aceitam uma string como argumento.</p>
+            </li>
+            <li>
+                <p>Cenário de múltiplas concatenações, usar StringBuilder em vez de String.</p>
+            </li>
+        </ul>
+
+    </main>
+
+</body>
+
+</html>

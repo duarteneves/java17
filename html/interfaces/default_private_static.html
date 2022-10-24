@@ -1,0 +1,53 @@
+<html lang="pt">
+
+<head>
+
+    <title>Java SE 17</title>
+    
+    <meta charset="utf-8">
+    <meta name="author" content="Duarte Neves">
+
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="interfaces.html">Anterior</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>Default, private e static</h1>        
+
+        <ul>
+            <li>
+                <p>Interfaces suportam métodos implementados desde que sejam marcados como default, private ou static.</p>
+            </li>
+            <li>
+                <p>Métodos privados não causam conflitos uma vez que não estão visíveis fora da interface.</p>
+            </li>
+            <li>
+                <p>Métodos static não causam conflitos uma vez são invocados através do tipo e não estão relacionados à referência do objeto.</p>
+            </li>
+            <li>
+                <p>Métodos default podem entrar em conflitos e neste cenário têm de ser resolvidos, sendo que a classe que implementa as interfaces tem de fazer override sobre o método, definindo assim  a sua implementação.</p>
+            </li>
+            <li>
+                <p>Caso não resulte num conflito, o método de default pode ser herdado pela classe.</p>
+            </li>
+        </ul>
+
+        <img class="w-768" alt="" src="../images/interfaces/default_private_static.png" />
+
+    </main>
+
+</body>
+
+</html>

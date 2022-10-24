@@ -1,0 +1,72 @@
+<html lang="pt">
+
+<head>
+
+    <title>Java 17</title>
+    
+    <meta charset="utf-8">
+    <meta name="author" content="Duarte Neves">
+
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="classes_design.html">Anterior</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>Construtores</h1>
+
+        <ul>
+            <li>
+                <p>Métdos especiais para inicializar objetos.</p>
+            </li>
+            <li>
+                <p>O nome do construtor tem de ser igual ao nome da classe e não deve ter definido o tipo de retorno nem mesmo void.</p>
+            </li>
+            <li>
+                <p>Geralmente os construtores são public.</p>
+            </li>
+            <li>
+                <p>O construtor de default, sem argumentos, é implicitamente adicionado à classe, se esta não tiver definidos construtores.</p>
+            </li>
+            <li>
+                <p>É permitido definir o construtor default mesmo este existindo implicitamente.</p>
+            </li>            
+            <li>
+                <p>A partir do momento que é definido um construtor com argumentos, se pretender ter mesmo um constrtuor sem argumentos 
+                     é necessário criar o mesmo.</p>
+            </li>            
+        </ul>
+
+        <img class="w-768" alt="" src="../images/classes_design/construtores.png" />
+
+
+        <h2>Overload</h2>
+
+        <ul>
+            <li>
+                <p>Um constutor pode invocar outro construtor usando this(args).</p>
+            </li>
+            <li>
+                <p>A invocação de outro construtor tem de ser efetuado na 1ª linha do construtor.</p>
+            </li>
+        </ul>
+
+        <img class="w-768" alt="" src="../images/classes_design/construtores_reuse.png" />
+
+
+    </main>
+
+</body>
+
+</html>

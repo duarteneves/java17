@@ -1,0 +1,69 @@
+<html lang="pt">
+
+<head>
+
+    <title>Java 17</title>
+    
+    <meta charset="utf-8">
+    <meta name="author" content="Duarte Neves">
+
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="classes_design.html">Anterior</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="row">
+            <div style="flex: 0 0 auto; padding-top: 15px;">
+                <img class="icon" alt="" src="../images/java_logo.png"  title="pt.dneves.record.Employee*.java" />
+            </div>            
+            <div><h1>Records</h1></div>            
+        </div>
+
+        <ul>
+            <li>
+                <p>Records surgem a partir do Java 14.</p>
+            </li>
+            <li>
+                <p>Objetivos e vantagens: diminuir escrita de código, diminuir o uso de bibliotecas como Lombok, 
+                    garantir imutabilidade, usar records para serializar / desserializar.</p>
+            </li>                        
+            <li>
+                <p>Um record é uma class final, por esse motivo não pode ser uma subclasse.</p>
+            </li>
+            <li>
+                <p>Um record implicitamente estende a classe java.lang.Record .</p>
+            </li>
+            <li>
+                <p>Todos os atributos são private e final, consequentemente são imutáveis .</p>
+            </li>
+            <li>
+                <p>Um único construtor é criado com todos os atributos definidos no record.</p>
+            </li>
+            <li>
+                <p>Um record automaticamente disponibiliza métodos para acesso aos atributos. Contudo, não usam a terminologia get, apenas identificam o nome do atributo.</p>
+            </li>
+            <li>
+                <p>Um record automaticamente disponibiliza métodos hasCode(), equals() e toString().</p>
+            </li>
+            <li>
+                <p>Usar records para serializar / desserializar, como data-provider de uma base de dados, em mensagens enviadas e recebidas na comunicação assíncrona.</p>
+            </li>                                             
+        </ul>
+
+    </main>
+
+</body>
+
+</html>

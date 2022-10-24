@@ -1,0 +1,94 @@
+<html lang="pt">
+
+<head>
+
+    <title>Java SE 17</title>
+    
+    <meta charset="utf-8">
+    <meta name="author" content="Duarte Neves">
+
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="tipos_condicoes_ciclos.html">Anterior</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>Controlo de fluxo</h1>
+
+        <h2>if / else</h2>
+
+        <ul>
+            <li>
+                <p>O bloco de código dentro do if é executado se a expressão boolean definida devolver true.</p>
+            </li>
+            <li>
+                <p>Por outro lado, o else é executado caso a expressão boolean do if devolver false.</p>
+            </li>
+            <li>
+                <p>A definição do else é opcional.</p>
+            </li>
+            <li>
+                <p>Não existe else / if em Java, nós podemos é usar um if / else dentro de outro if / else.</p>
+            </li>            
+        </ul>
+
+        <div class="row">
+            <div style="flex: 0 0 auto; padding-top: 15px;">
+                <img class="icon small" alt="" src="../images/java_logo.png" title="TernaryOperator.java" />
+            </div>            
+            <div><h2>operador condicional ternário</h2></div>            
+        </div>
+
+        <ul>
+            <li>
+                <p>Permite fazer afetações condicionais substituindo if / else.</p>
+            </li>
+        </ul>
+
+        <div class="row">
+            <div style="flex: 0 0 auto; padding-top: 15px;">
+                <img class="icon small" alt="" src="../images/java_logo.png" title="Switch.java" />
+            </div>            
+            <div><h2>switch (antes Java 17)</h2></div>            
+        </div>
+        
+
+        <ul>
+            <li>
+                <p>Quando estamos perante vários cenários de control, mas esses cenários têm por base a mesma variável, em vez de criarmos múltimos if/else
+                    podemos usar o switch que cóigo mais fácil de ler e manter.</p>
+            </li>
+            <li>
+                <p>switch aceita expressões do seguinte tipo: byte, short, int, char, String e enum. Até à versão 7
+                    do Java apenas aceitava int e a partir da vesão 8, int, strings e enums.</p>
+            </li>
+            <li>
+                <p>O switch identifca os casos do valor esperado presente na expressão do
+                    switch, cada case é uma constante. 
+                    A execução segue o fluxo a que a expressão do switch correspondente tendo em conta a label do case.</p>
+            </li>
+            <li>
+                <p>A execução continua até encontrar a palavra break.</p>
+            </li>
+            <li>
+                <p>Caso não exista correspondência entre a expressão e um dos casos considerados, o flow caí no caso de default definido. 
+                    A definição de default é opcional mas é aconcelhável, nem que seja para lançamento de uma exceção, caso não esperado.</p>
+            </li>
+        </ul>
+
+    </main>
+
+</body>
+
+</html>
