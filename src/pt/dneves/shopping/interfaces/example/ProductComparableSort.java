@@ -8,12 +8,13 @@ import pt.dneves.shopping.app.model.Product;
 
 public class ProductComparableSort {
 	
+	
 	public static void main(String[] args) {
 		
 		
 		Product[] products = {
-			new Product(0, "a", BigDecimal.valueOf(1.0)),
 			new Product(1, "b", BigDecimal.valueOf(1.0)),
+			new Product(0, "a", BigDecimal.valueOf(1.0)),
 			new Product(2, "c", BigDecimal.valueOf(1.0))
 		};
 		

@@ -1,0 +1,67 @@
+<html lang="pt">
+
+<head>
+
+    <title>Java SE 17</title>
+    
+    <meta charset="utf-8">
+    <meta name="author" content="Duarte Neves">
+
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="nested_classes_lambda.html">Anterior</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="row">
+            <div style="flex: 0 0 auto; padding-top: 15px;">
+                <img class="icon" alt="" src="../images/java_logo.png"  title="pt.dneves.nested.*" />
+            </div>            
+            <div><h1>Classes Nested</h1></div>
+        </div>  
+
+        <ul>
+            <li>
+                <p>Em Java é possível definir classes dentro de classes. A estas classes chamamos de <i>nested classes</i>.</p>
+            </li>
+            <li>
+                <p>Existem as static e non-static nested classes, estas últimas designam-se por inner classes.</p>
+            </li>            
+            <li>
+                <p>Dependendo do contexto em que são usadas, existem 4 tipos de nested classes:</p>
+                <ul>
+                    <li>static (nested) - associada ao contexto estático da <i>outer class</i>.</li>
+                    <li>member (inner) - associada dentro do contexto da instância da <i>outer class</i>.</li>                    
+                    <li>local (inner) - associada ao contexto de um método específico.</li>
+                    <li>anonymous (inner) - implementação <i>inline</i> ou estenção de uma interface ou classe.</li>
+                </ul>
+            </li>
+            <li>
+                <p>Classes nested do tipo static e member podem ser definidas como private, public, protected ou default.</p>
+            </li>
+            <li>
+                <p>A utilização destas classes não é comum, mas existem 3 razões que justificam a sua utilização:</p>
+                <ul>
+                    <li>organização: por vezes a definição de uma classe só faz sentido no contexto de outra classe, especialmente quando a nested class não é usada fora do contexto da <i>outer class</i>.</li>
+                    <li>acesso: as <i>nested classes</i> têm acesso especial a parâmetros das <i>outer classes</i>.</li>
+                    <li>conveniência: não é necessário criar um novo ficheiro java para a <i>nested class</i> quando esta é usada apenas no contexto da <i>outer class</i>.</li>
+                </ul>
+            </li>
+        </ul>
+
+    </main>
+
+</body>
+
+</html>

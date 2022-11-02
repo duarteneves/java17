@@ -1,0 +1,54 @@
+<html lang="pt">
+
+<head>
+
+    <title>Java SE 17</title>
+    
+    <meta charset="utf-8">
+    <meta name="author" content="Duarte Neves">
+
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="collections.html">Anterior</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>Acesso concorrente</h1>
+
+        <ul>
+            <li>
+                <p>Uma collection pode ser corrompida se for acedida por múltiplas threads.</p>
+                <ul>
+                    <li>Se duas ou mais execuções em simultâneo tentarem aceder ao mesmo tempo a um objeto, esses acessos podem corromper o objeto se este não for imutável.</li>
+                    <li>Qualquer objeto presente na <i>heap</i> não é <i>thread-safe</i> se não for imutável.</li>
+                    <li>Tornar uma <i>collection</i> <i>thread-safe</i> não garante o acesso seguro dos objetos que ela contém.
+                        Apenas objetos imutáveis são automaticamente <i>thread-safe</i>.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Para prevenir que a <i>collection</i> fique corrompida por acesso em paralelo, podemos adotar uma destas hipóteses:</p>
+                <ul>
+                    <li>Unmodifiable - rápido, mas apenas permite leituras</li>
+                    <li>Synchronized - lento e pouco escalável</li>
+                    <li>Copy-on-write - rápido, mas consumo de memória</li>
+                </ul>
+            </li>
+        </ul>
+
+    </main>
+
+</body>
+
+</html>

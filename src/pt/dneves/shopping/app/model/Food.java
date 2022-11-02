@@ -5,12 +5,26 @@ import java.time.LocalDate;
 
 public class Food extends Product {
 
+	public static int CONSTANTS = 1;
+	
+	
 	private LocalDate bestBefore;
 	private BigDecimal discount;
 
+	
 	public Food() {
 		super();
 	}
+
+	public Food(String name) {
+		super(name);
+	}
+
+	public Food(int id, String name, BigDecimal price, BigDecimal discount) {
+		super(id, name, price);
+		this.discount = discount;
+	}
+
 
 	@Override
 	public LocalDate getBestBefore() {
@@ -25,7 +39,7 @@ public class Food extends Product {
 	}
 	
 	@Override
-	protected void overrideAccessModifier() {
+	public void overrideAccessModifier() {
 		// do nothing
 	}
 	

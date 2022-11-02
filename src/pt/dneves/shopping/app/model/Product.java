@@ -3,7 +3,7 @@ package pt.dneves.shopping.app.model;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-public class Product implements Cloneable {
+public class Product implements Cloneable { //implements Comparable<Product> {
 
 	// TODO COLCOAR ESTE exemplos - constantes
 //	private final String XPTO;
@@ -19,6 +19,10 @@ public class Product implements Cloneable {
 	public Product() {
 		// do nothing
 //		super();
+	}
+
+	public Product(String name) {
+		this.name = name;
 	}
 	
 	public Product(int id, String name, BigDecimal price) {
@@ -89,5 +93,5 @@ public class Product implements Cloneable {
 		return super.clone();
 		
 	}
-	
+
 }

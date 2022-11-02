@@ -26,6 +26,28 @@ body {
   padding: 1.25rem;
 }
 
+
+/* 
+ * colors
+ */
+.blue {
+  color: blue;
+}
+
+ .green {
+  color: green;
+}
+
+.red {
+  color: red;
+}
+
+.yellow {
+  color: yellow;
+}
+
+
+
 .col-1 {
   flex: 0 0 auto;
   width: 8.33333333%;
@@ -132,6 +154,10 @@ main.center {
 main img {
   margin-top: 40px; 
   margin-bottom: 40px;
+}
+
+main img.w-256 {
+  width: 256px;
 }
 
 main img.w-512 {

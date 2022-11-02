@@ -1,0 +1,66 @@
+<html lang="pt">
+
+<head>
+
+    <title>Java SE 17</title>
+    
+    <meta charset="utf-8">
+    <meta name="author" content="Duarte Neves">
+
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="collections.html">Anterior</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="row">
+            <div style="flex: 0 0 auto; padding-top: 15px;">
+                <img class="icon" alt="" src="../images/java_logo.png"  title="pt.dneves.deque.Operations.java" />
+            </div>            
+            <div><h1>Deque e ArrayDeque</h1></div>            
+        </div>
+
+        <ul>
+            <li>
+                <p>A classe ArrayDeque é uma implementação da interface Deque.</p>
+            </li>
+            <li>
+                <p>Uma instância de ArrayDeque pode ser criada com o construtor default e neste caso o array fica com uma capacidade de 16 elementos.</p>
+            </li>
+            <li>
+                <p>Um ArrayDeque aumenta a sua capacidade interna quanto tem essa necessidade.</p>
+            </li>
+            <li>
+                <p>Existe a possibilidade de definir um ArrayDeque com uma determinada capacidade inicial.</p>
+            </li>
+        
+            <li>
+                <p>Deque representa uma coleção que implementa FIFO e LIFO.</p>
+                <ul>
+                    <li>Os métodos offerFirst(T) e offterLast(T) inserem elementos na cabeça e na cauda do deque.</li>
+                    <li>Os métodos pollFirst(T) e pollLast(T) obtêm e remove elementos na cabeça e na cauda do deque.</li>
+                    <li>Os métodos peekFirst(T) e peekLast(T) obtêm elementos na cabeça e na cauda do deque.</li>
+                </ul>
+            </li> 
+
+            <li><p>Uma coleção deque não suporta valores null.</p></li>
+            <li><p>Quando deque é vazio as operações poll e peek retornam null.</p></li>
+
+        </ul>
+
+    </main>
+
+</body>
+
+</html>

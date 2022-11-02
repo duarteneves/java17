@@ -1,0 +1,54 @@
+<html lang="pt">
+
+<head>
+
+    <title>Java SE 17</title>
+    
+    <meta charset="utf-8">
+    <meta name="author" content="Duarte Neves">
+
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="nested_classes_lambda.html">Anterior</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>default, static e private</h1>
+
+        <ul>
+            <li>
+                <p>Como já vimos anteriormente, as interfaces podem imlementar métodos "não abstratos".</p>
+            </li>
+            <li>
+                <p>As expressões lambda apenas consideram os métodos abstratos disponibilizados por interfaces funcionais.</p>
+            </li>            
+            <li>
+                <p>Métodos default e static definidos pela interface são válidos na definição da API, mas não na expressão lambda.</p>
+            </li>
+            <li>
+                <p>Métodos private podem estar presentes, mas não são visíveis fora da interface.</p>
+            </li>
+            <li>
+                <p>Não há a necessidade de sobrepor a implementar de métodos default a não ser que entrem em conflito com a implementação de outras interfaces.</p>
+            </li>
+            <li>
+                <p>As expressões lambda não causam conflito o conflito anterior, uma vez que cada implementasção é inline e sobre uma única interface.</p>
+            </li>
+        </ul>
+
+    </main>
+
+</body>
+
+</html>

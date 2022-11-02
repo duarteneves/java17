@@ -17,7 +17,7 @@ public class GenericType<T> {
 		GenericType<String> type1 = new GenericType<>();
 		type1.setValue("Pankaj");
 		
-		String str = (String) type1.getValue();
+		String str = type1.getValue();
 		
 		System.out.println(str);
 

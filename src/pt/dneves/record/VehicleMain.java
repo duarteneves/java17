@@ -26,6 +26,14 @@ public class VehicleMain {
 
 		System.out.println(VehicleRecord.brandAsUpperCase(vehicle2));
 		
+		
+		// compact constructor
+		// throw NPE
+		
+		VehicleRecord vehicle3 = new VehicleRecord(null);
+		
+		VehicleRecord vehicle4 = new VehicleRecord("Mercedes", null);
+		
 	}
 	
 }

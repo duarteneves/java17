@@ -17,7 +17,7 @@ public record VehicleRecord(String brand, String licensePlate) {
 //    	this.brand = brand;
 //    	this.licensePlate = licensePlate;
 //    }
-    
+ 
     public String brandAsLowerCase() {
         return brand().toLowerCase();
     }
