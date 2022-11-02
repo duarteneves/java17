@@ -1,6 +1,6 @@
 package pt.dneves.game.interfaces;
 
-public class PlayerCitizen implements Taser {
+public class PlayerCitizen implements IPlayer, Taser {
 
 	@Override
 	public int volts() {

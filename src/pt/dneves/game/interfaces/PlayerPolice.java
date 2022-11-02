@@ -1,6 +1,6 @@
 package pt.dneves.game.interfaces;
 
-public class PlayerPolice implements Gun, Taser {
+public class PlayerPolice implements IPlayer, Gun, Taser {
 
 	@Override
 	public int strong() {
