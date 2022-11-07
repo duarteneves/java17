@@ -62,6 +62,10 @@ public class Product implements Cloneable { //implements Comparable<Product> {
 		return bestBefore;
 	}
 	
+	public void setBestBefore(LocalDate bestBefore) {
+		this.bestBefore = bestBefore;
+	}
+	
 	public void applyDiscound(BigDecimal value) {
 		
 		if(BigDecimal.ZERO.compareTo(value) == 0
@@ -92,6 +96,16 @@ public class Product implements Cloneable { //implements Comparable<Product> {
 		
 		return super.clone();
 		
+	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		return name.equals(((Product)obj).getName());
+	}
+	
+	@Override
+	public int hashCode() {
+		return this.name.hashCode();
 	}
 
 }

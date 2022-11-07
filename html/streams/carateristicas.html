@@ -1,0 +1,71 @@
+<html lang="pt">
+
+<head>
+
+    <title>Java SE 17</title>
+    
+    <meta charset="utf-8">
+    <meta name="author" content="Duarte Neves">
+
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="streams.html">Anterior</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="row">
+            <div style="flex: 0 0 auto; padding-top: 15px;">
+                <img class="icon" alt="" src="../images/java_logo.png"  title="CreateStreamApi.java" />
+            </div>            
+            <div><h1>Caraterísticas</h1></div>
+        </div>          
+
+        <ul>
+            <li>
+                <p>É um fluxo de elementos imutável.</p>
+            </li>
+            <li>
+                <p>O processo de streams pode ser sequencial ou em paralelo.</p>
+            </li>
+            <li>
+                <p>A partir do momento que um elemento é processado deixa de estar disponível a partir da stream.</p>
+            </li>
+            <li>
+                <p>As operações sobre uma stream classificam-se em ações intermédias ou terminais.</p>
+            </li>
+            <li>
+                <p>Através das operações intermédias a uma stream podemos aplicar <i>method chaning</i>.</p>
+            </li>
+            <li>
+                <p>As operações sobre streams são lazy (preguiçosas). 
+                    As operações intermédias não realizam processamento até uma operação terminal ser chamada no processo.</p>
+            </li>
+            <li>
+                <p>Uma operação terminal pode "fundir" e processar diversas operações intermédias numa única ação.</p>
+            </li>                   
+            <li>
+                <p>As operações sobre streams usam interfaces funcionais e podem ser implementadas com expressões lambda.</p>
+            </li>
+            <li>
+                <p>Uma stream pode representar um valor finito ou infinito de fluxo de elementos.</p>
+            </li>
+        </ul>
+
+        <img class="w-768" alt="" src="../images/streams/stream.png" />
+
+    </main>
+
+</body>
+
+</html>

@@ -59,7 +59,6 @@ public class LambdaMain {
 		
 		Collections.sort(names, sort);
 
-		
 	}
 	
 }

@@ -1,0 +1,53 @@
+<html lang="pt">
+
+<head>
+
+    <title>Java SE 17</title>
+    
+    <meta charset="utf-8">
+    <meta name="author" content="Duarte Neves">
+
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="streams.html">Anterior</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>Interfaces funcionais</h1>
+
+        <ul>
+            <li>
+                <p>Interfaces funcionais definidas no package java.util.function .</p>
+            </li>
+            <li>
+                <p>Existem 5 tipos e interfaces usadas pelos métodos stream.</p>
+                <ul>
+                    <li>Predicate&lt;T&gt; - define o método <b>boolean test(T t)</b> para aplicar condições e filtrar elementos.</li>
+                    <li>Function&lt;T, R&gt; - define o método <b>R apply(T t)</b> para converter tipos de elementos.</li>
+                    <li>UnaryOperator&lt;T, R&gt; - uma variante da <i>Function</i>, define o método <b>T apply(T t)</b> para converter valores.</li>
+                    <li>Consumer&lt;T, R&gt; - define o método <b>void accept(T t)</b> para processar elementos.</li>
+                    <li>Supplier&lt;T, R&gt; - define o método <b>T get(T t)</b> para produzir elementos.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <img class="w-768" alt="" src="../images/streams/cenas1.png" />
+
+        <img class="w-768" alt="" src="../images/streams/cenas2.png" />
+
+    </main>
+
+</body>
+
+</html>

@@ -20,6 +20,10 @@ public class Food extends Product {
 		super(name);
 	}
 
+	public Food(int id, String name, BigDecimal price) {
+		super(id, name, price);
+	}
+
 	public Food(int id, String name, BigDecimal price, BigDecimal discount) {
 		super(id, name, price);
 		this.discount = discount;

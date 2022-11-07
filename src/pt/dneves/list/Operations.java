@@ -14,15 +14,27 @@ public class Operations {
 		
 		Product p1 = new Food("Cake");
 		Product p2 = new Drink("Tea");
+		Product p3 = new Drink("Tea 2");
+		Product p4 = new Drink("Tea 3");
+		
+		Product p5 = new Drink("Tea");
+		
 		
 		List<Product> menu = new ArrayList<>();
 		
 		menu.add(p1);
 		menu.add(p2);
+		
+		System.out.println(menu.size());
+		
+		
 		menu.add(2, null);
-		menu.add(3, p1);
-		menu.add(2, p1);
+		menu.add(3, p3);
+		menu.add(2, p4);
 		menu.set(2, p2);
+
+		System.out.println(menu.size());
+		
 		
 		menu.remove(0);
 		menu.remove(p2);

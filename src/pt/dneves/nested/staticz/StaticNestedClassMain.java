@@ -5,7 +5,7 @@ public class StaticNestedClassMain {
 	public static void main(String[] args) {
 		
 		// é possível criar uma instância da classe estática
-		// sem criar a instãncia da outer class
+		// sem criar a instância da outer class
 		
 		Order.ShippingMode shippingMode = Order.createShippingMode("Fast");
 		

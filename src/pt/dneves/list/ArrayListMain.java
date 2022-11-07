@@ -8,7 +8,7 @@ import java.util.List;
 public class ArrayListMain {
 
 	
-	private static final int MAX = 500;
+	private static final int MAX = 500000;
 	
 
 	private static void defaultCapacity() {
