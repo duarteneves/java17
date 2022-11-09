@@ -1,0 +1,70 @@
+<html lang="pt">
+
+<head>
+
+    <title>Java SE 17</title>
+    
+    <meta charset="utf-8">
+    <meta name="author" content="Duarte Neves">
+
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="streams.html">Anterior</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="row">
+            <div style="flex: 0 0 auto; padding-top: 15px;">
+                <img class="icon" alt="" src="../images/java_logo.png"  title="Parallel.java" />
+            </div>            
+            <div><h1>Processamento em paralelo</h1></div>            
+        </div>        
+
+        <ul>
+            <li>
+                <p>Os elementos da <i>stream</i> são dividios em <i>subsets</i>. 
+                    <i>Subsets</i> podem ser dividos em mais <i>subsets</i>.</p>
+            </li>
+            <li>
+                <p>Os <i>subsets</i> são processados em paralelo.</p>
+            </li>
+            <li>
+                <p>A ordem de processamento é indeterminada.</p>
+            </li>
+            <li>
+                <p>Para ativar o paralelismo usar parallel(). Por omissão é sequencial (stream()).</p>
+            </li>
+            <li>
+                <p>A <i>stream</i> será processada de modo sequencial ou paralelo dependendo do último método que é invocado.</p>
+            </li>
+            <li>
+                <p>Para termos processamento paralelo o nosso código deve ser definido de forma a:</p>
+                <ul>
+                    <li><i>stateless</i> - o estado de um elemento não deve afetar outro elemento</li>
+                    <li><i>non-interfering</i> - o código não deve ser afetado</li>
+                    <li><i>associative</i> - o resultado não deve ser afetado pela ordem das operações</li>
+                </ul>
+            </li>
+            <li>
+                <p>Não é possível prever a ordem de processamento e a atribuição dinâmica de CPUs.</p>
+            </li>
+        </ul>
+
+        <img class="w-512" alt="" src="../images/streams/paralelo_1.png" />
+
+    </main>
+
+</body>
+
+</html>

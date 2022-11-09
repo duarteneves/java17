@@ -21,7 +21,7 @@ public class AnonymousNestedCassMain {
 		Order order2 = new Order() {
 			
 			public java.math.BigDecimal getDiscount() {
-				return BigDecimal.valueOf(0.1);
+				return BigDecimal.valueOf(0.2);
 			};
 			
 		};
@@ -35,7 +35,7 @@ public class AnonymousNestedCassMain {
 			
 			public int compare(Product o1, Product o2) {
 				return o1.getName().compareTo(o2.getName());
-			};
+			}
 			
 		});
 		

@@ -12,7 +12,7 @@ public class LambdaMain {
 	
 	public static void main(String[] args) {
 		
-		List<Product> products = null;
+		List<Product> products = new ArrayList<>();
 		
 		Collections.sort(products, 
 				(o1, o2) -> o1.getName().compareTo(o2.getName()));
