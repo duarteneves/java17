@@ -51,7 +51,7 @@ public class PathMain {
 		
 		try {
 			
-			// 
+			// /users/dneves/pics/pic.jpg
 			Path verifiedPath = picFile.toRealPath();
 		
 		} catch (IOException e) {

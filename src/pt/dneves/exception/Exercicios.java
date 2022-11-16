@@ -3,14 +3,15 @@ package pt.dneves.exception;
 import java.io.IOException;
 import java.nio.file.NoSuchFileException;
 
-public class ExercicioMain {
+public class Exercicios {
 
+	
 	public void exercio1() {
 		
 		try {
-			a1();
+			// a1();
 			// a2();
-			// a3();
+			a3();
 			b();
 		} catch(NoSuchFileException e) {
 			c();
@@ -46,7 +47,7 @@ public class ExercicioMain {
 		
 	}
 
-	public void a3() throws IOException {
+	public void a3() throws NoSuchFileException {
 		
 		boolean test = true;
 		
