@@ -1,0 +1,53 @@
+<html lang="pt">
+
+<head>
+
+    <title>Java SE 17</title>
+    
+    <meta charset="utf-8">
+    <meta name="author" content="Duarte Neves">
+
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="io.html">Anterior</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       
+        <h1>Binário</h1>
+
+        <ul>
+            <li>
+                <p>As <i>streams</i> de <i>input</i> e <i>output</i> implementam <b>AutoCloseable</b>.</p>
+                <ul>
+                    <li>podem ser usadas como parâmetro no construtor <i>try-with-parameters</i></li>
+                    <li>são fecahdas no bloco implícito <i>finally</i></li>
+                </ul>
+            </li>
+            <li>
+                <p>O método <b>read</b> popula a informação no buffer em pacotes definidos e retorna o comprimento lido.</p>
+                <ul>
+                    <li>nas leituras intermédias o método retornar o tamanho igual à definição do buffer</li>
+                    <li>na penúltima leitura retornará um tamanho inferior ao do buffer</li>
+                    <li>na última leitura retornará -1, o que indica o fim da <i>stream</i>.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <img class="w-640" alt="" src="../images/io/read_write_binary.png" />
+
+    </main>
+
+</body>
+
+</html>

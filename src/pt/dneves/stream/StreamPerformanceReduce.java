@@ -47,7 +47,8 @@ public class StreamPerformanceReduce {
 		
 		List<Integer> ages = Arrays.asList(25, 30, 45, 28, 32);
 
-		int computedAges = ages.parallelStream()
+		int computedAges = ages.stream()
+				.parallel()
 				.reduce(0, (subtotal, element) -> subtotal + element, Integer::sum);
 		
 		System.out.println(computedAges);

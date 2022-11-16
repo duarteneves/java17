@@ -1,0 +1,57 @@
+<html lang="pt">
+
+<head>
+
+    <title>Java SE 17</title>
+    
+    <meta charset="utf-8">
+    <meta name="author" content="Duarte Neves">
+
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="logging_exceptions.html">Anterior</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       
+        <h1>Apanhar exceções</h1>
+
+        <ul>
+            <li>
+                <p>Para apanhar exceções basta usarmos o bloco <b><i>try</i></b>. 
+                    Colocar um ou mais <b><i>catch</i></b> ou o bloco <b><i>finally</i></b> ou ambos.</p>
+            </li>
+            <li>
+                <p><i>Exception handlers</i> mais ou menos específicos podem ser definidos, 
+                    no entanto existem regras, os mais específicos têm de ser definidos antes do mais genéricos.</p>
+            </li>
+            <li>
+                <p>Exceções <i>Unchecked</i> não precisam de ser <i>catch</i>.</p>
+            </li>
+            <li>
+                <p>Quando uma exceção ocorre dentro de um bloco try, o programa é interrompido e o control é passado para o <i>catch</i> 
+                    mais próximo que faça <i>match</i> com o tipo de exceção.</p>
+            </li>
+            <li>
+                <p>É suficente definir um <i>catch</i> único de um tipo genérico, contudo isso não é uma boa prática porque não esclarece
+                    as razões distintas pelas quais o programa pode ter parado a sua execução normal.</p>
+            </li>
+        </ul>
+
+        <img class="w-640" alt="" src="../images/logging_exceptions/apanhar_excecoes.png" />
+
+    </main>
+
+</body>
+
+</html>

@@ -5,6 +5,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import pt.dneves.shopping.app.model.Customer;
 import pt.dneves.shopping.app.model.Order;
@@ -16,8 +17,6 @@ public class Exercicios {
 	
 	public static void main(String[] args) {
 		
-		
-		// faltMapping
 		
 		List<Order> orders = new ArrayList<>();
 		
@@ -99,6 +98,15 @@ public class Exercicios {
 		return customers;
 		
 	}
+
+	private static List<Customer> exercicio1_streams(List<Order> orders) {
+		
+		return orders.stream()
+			.map(Order::getCustomer)
+			.sorted((c1, c2) -> c1.getName().compareTo(c2.getName()))
+			.collect(Collectors.toList());
+		
+	}
 	
 	
 	private static List<Customer> exercicio2(List<Order> orders) {
@@ -128,7 +136,17 @@ public class Exercicios {
 		return customers;
 		
 	}	
+	
+	
+	private static List<Customer> exercicio2_streams(List<Order> orders) {
+		
+		return orders.stream()
+				.map(Order::getCustomer)
+				.filter(c -> c.getName().charAt(0) == 'B')
+				.sorted((c1, c2) -> c1.getName().compareTo(c2.getName()))
+				.collect(Collectors.toList());
 
+	}	
 	
 	private static Customer exercicio3(List<Order> orders, String name) {
 		
@@ -147,6 +165,17 @@ public class Exercicios {
 		
 	}
 	
+	private static Customer exercicio3_streams(List<Order> orders, String name) {
+		
+		return orders.stream()
+				.map(Order::getCustomer)
+				.filter(c -> c.getName().equals(name))
+				.findFirst()
+				.orElse(null);
+		
+	}
+	
+	
 	private static double exercicio4(Order order) {
 		
 		double sum = 0;
@@ -160,6 +189,15 @@ public class Exercicios {
 		return sum;
 		
 	}
+	
+	private static double exercicio4_streams(Order order) {
+		
+		return order.getItems().stream()
+			.mapToDouble(p -> p.getPrice().doubleValue())
+			.sum();
+		
+	}
+	
 
 	private static Order exercicio5(List<Order> orders) {
 		
@@ -177,6 +215,15 @@ public class Exercicios {
 		}
 		
 		return max;
+		
+	}
+
+	
+	private static Order exercicio5_strams(List<Order> orders) {
+		
+		return orders.stream()
+			.max(Comparator.comparing(o -> Exercicios.exercicio4_streams(o)))
+			.get();
 		
 	}
 

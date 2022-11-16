@@ -1,0 +1,52 @@
+<html lang="pt">
+
+<head>
+
+    <title>Java SE 17</title>
+    
+    <meta charset="utf-8">
+    <meta name="author" content="Duarte Neves">
+
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="io.html">Anterior</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       
+        <h1>Redefinir</h1>
+
+        <ul>
+            <li>
+                <p>O processo de serialização e desserialização pode ser redefinido.</p>
+                <ul>
+                    <li><b>writeObject</b> - ações para serializar o objeto</li>
+                    <li><b>readObject</b> - ações para desserializar o objeto</li>
+                </ul>
+            </li>
+            <li>
+                <p>Os métodos devem ser definidos como <i>private</i>.</p>
+            </li>
+            <li>
+                <p>A invocação dos métodos <i>defaultWriteObject</i> e <i>defaultReadObject</i> permitem
+                     as operações de <i>default</i> dos processos de serialização e desserialização.</p>
+            </li>
+        </ul>
+
+        <img class="w-768" alt="" src="../images/io/redefinir.png" />      
+
+    </main>
+
+</body>
+
+</html>

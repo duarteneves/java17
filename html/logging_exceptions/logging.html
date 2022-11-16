@@ -1,0 +1,73 @@
+<html lang="pt">
+
+<head>
+
+    <title>Java SE 17</title>
+    
+    <meta charset="utf-8">
+    <meta name="author" content="Duarte Neves">
+
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="logging_exceptions.html">Anterior</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="row">
+            <div style="flex: 0 0 auto; padding-top: 15px;">
+                <img class="icon" alt="" src="../images/java_logo.png"  title="LoggerMain.java" />
+            </div>            
+            <div><h1>Logging</h1></div>
+        </div>  
+
+        <ul>
+            <li>
+                <p>A Java API de <i>logging</i> permite identificar cada <i>logger</i> a partir de um nome.</p>
+            </li>
+            <li>
+                <p>É prática comum usar-se o nome da classe como nome do logger.</p>
+            </li>
+            <li>
+                <p>Existem 7 nívels de <i>logging</i> que permitem ao programador "logar" informação de acordo com a categoria, 
+                    importância ou classificação do cenário ou mensagem.</p>
+            </li>                        
+        </ul>
+
+        <img class="w-256" alt="" src="../images/logging_exceptions/logging.png" />
+
+        <ul>
+            <li>
+                <p>Os métodos de <i>logging</i> da API podem ser agruados em 5 categorias:</p>
+                <ul>
+                    <li><b>log</b> - Certamente o método mais comum e usado. 
+                        Permite a definição de mensagens de logging através da identificação da categoria, 
+                        da própria mensagem e, de forma opcional, de parâmetros presentes na mensagem.</li>
+                    <li><b>logp</b> - Método similar ao anterior, mas que permite, adicionalmente, 
+                        especificar os nome da class e do método.</li>
+                    <li><b>logrb</b> - Método similar ao anterior, mas que permite, adicionalmente, 
+                        especificar <i>resource bundle</i> para localizar a mensagem de logging.</li>
+                    <li><b>entering</b>, <b>exiting</b>, <b>throwing</b> - 
+                        Métodos usados para marcar a entrada de um método, a saída do método e o lançamento de exeções.
+                        A categoria de logging por trás desta defiição é <b>FINER</b>.</li>
+                    <li><b>severe</b>, <b>warning</b>, <b>config</b>, <b>info</b>, <b>fine</b>, <b>finer</b>, <b>finest</b> - 
+                        Métodos que integram a categoria que o programador pretende aplicar.</li>                        
+                </ul>                
+            </li>
+        </ul>
+
+    </main>
+
+</body>
+
+</html>

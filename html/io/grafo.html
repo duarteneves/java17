@@ -1,0 +1,57 @@
+<html lang="pt">
+
+<head>
+
+    <title>Java SE 17</title>
+    
+    <meta charset="utf-8">
+    <meta name="author" content="Duarte Neves">
+
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="io.html">Anterior</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       
+        <h1>Grafo</h1>
+
+        <ul>
+            <li>
+                <p>Um objeto pode ser escrito / lido para / de uma <i>stream</i>.</p>
+            </li>
+            <li>
+                <p>Todos os atributos de tipos primitivos e classes como strings, números, datas e <i>collections</i> podem ser serializados.</p>
+            </li>
+            <li>
+                <p>Para serializar instâncias de classes, estas têm de implementar a interface <b>java.io.Serializablke</b>.</p>
+            </li>
+            <li>
+                <p>A serialização inclui o grafo de todo o objeto, excepto as variáveis <i>transient</i>.
+                    A palavra reservada <i>transient</i> indica que um variável só deve existir em memória
+                    e que não será escrita num objeto <b>ObjectOutputStream</b>.    
+                </p>
+            </li>
+            <li>
+                <p>Caso o programa tenta serializar um objeto não serializável é lançada a exceção <b>SerializationException</b>.</p>
+            </li>
+        </ul>
+
+        <img class="w-768" alt="" src="../images/io/serializacao.png" />        
+        <img class="w-512" alt="" src="../images/io/grafo.png" />        
+
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<html lang="pt">
+
+<head>
+
+    <title>Java SE 17</title>
+    
+    <meta charset="utf-8">
+    <meta name="author" content="Duarte Neves">
+
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="io.html">Anterior</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       
+        <h1>Sistema de ficheiros</h1>
+
+        <ul>
+            <li>
+                <p>O <i>package</i> <b>java.nio.file</b> contém um conjunto de classes que nos permitem interagir 
+                    com o sistema de ficheiros dos dispositivos.</p>
+                <ul>
+                    <li><b>Path</b> - representa ficheiros e diretorias</li>
+                    <li><b>Files</b> - disponibiliza operações para atuar sobre objetos <b>Path</b></li>
+                    <li><b>FileSystem</b> - permite obter informação sobre os ficheiros do sistema</li>
+                </ul>
+
+            </li>
+            <li>
+                <p>Por esse motivo serialização não é uma boa solução para armazenar informação no longo termo.</p>
+            </li>
+            <li>
+                <p>A falta de correspondência entre a definição da classe no procesos de serialização 
+                    pode ter um comportamento imprevisível.</p>
+            </li>
+            <li>
+                <p>o objeto da classe <b>ObjectInputStream</b> analise a variável <b>serialVersionUID</b>.
+                    Esta constante da classe, que deve ser definido quando a classe implemetna a interface <b>Serializable</b>,
+                    é usado para controlo de versão da classe. No momento de leitura se não existir correspondência
+                    é lançada a exceção <b>InvalidClassException</b> e o processo é interrompido.
+                </p>
+            </li>
+            <li>
+                <p>A classe <b>java.io.File</b> é <i>legacy</i>.</p>
+            </li>
+        </ul>
+
+        <img class="w-768" alt="" src="../images/io/sistema_ficheiros.png" />
+        
+    </main>
+
+</body>
+
+</html>

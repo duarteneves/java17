@@ -1,0 +1,58 @@
+<html lang="pt">
+
+<head>
+
+    <title>Java SE 17</title>
+    
+    <meta charset="utf-8">
+    <meta name="author" content="Duarte Neves">
+
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="logging_exceptions.html">Anterior</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       
+        <h1>Lançar exceções</h1>
+
+        <ul>
+            <li>
+                <p>Para lançar uma exceção é preciso instanciar a mesma com um dos construtores definidos e usar o operador <b><i>throw</i></b>.</p>
+            </li>
+            <li>
+                <p>Quando uma exceção é lançada o fluxo é interrompido e o controlo do tratamento do problema é passado ao <i>exception handler</i>.</p>
+            </li>
+            <li>
+                <p>Se o <i>exception handler</i> não estiver disponível do método:</p>
+                <ul>
+                    <li><b><i>Checked exceptions</i></b> - as exceções têm de estar definidas na assinatura do método.</li>
+                    <li><b><i>Unchecked excpetions</i></b> - as exceções são automaticamente propragadas.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <img class="w-640" alt="" src="../images/logging_exceptions/lancar_excecao.png" />
+
+        <ul>
+            <li>
+                <p>No exemplo anterior, seria suficiente declarar o método com uma exceção genérica, como por exemplo <i>Exception</i>.
+                    Contudo esta técnica não é uma boa prática porque torna obscuro o tipo de exceções que esse método pode produzir.</p>
+            </li>
+        </ul>
+
+    </main>
+
+</body>
+
+</html>

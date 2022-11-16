@@ -164,6 +164,10 @@ main img.w-512 {
   width: 512px;
 }
 
+main img.w-640 {
+  width: 640px;
+}
+
 main img.w-768 {
   width: 768px;
 }

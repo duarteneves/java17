@@ -65,6 +65,8 @@ public class StreamPerformanceCollect {
 		
 		// groupingBy
 		
+		// TODO - os produtos não têm data. Alterar o construtor
+		
 		Map<LocalDate, List<Product>> groups = products.stream()
 					.collect(Collectors.groupingBy(p -> p.getBestBefore()));
 				
@@ -74,8 +76,6 @@ public class StreamPerformanceCollect {
 		 */
 		
 		
-		
-		// faltMapping
 		
 		List<Order> orders = new ArrayList<>();
 		
@@ -94,8 +94,8 @@ public class StreamPerformanceCollect {
 		order1.setDate(LocalDate.now().plusDays(-5));
 
 		Product tea = new Product(1, "Tea", BigDecimal.valueOf(1.99), LocalDate.now());
-		Product cake = new Product(1, "Cake", BigDecimal.valueOf(2.99), LocalDate.now());
-		Product coffee = new Product(1, "Coffee", BigDecimal.valueOf(1.99), LocalDate.now());
+		Product cake = new Product(2, "Cake", BigDecimal.valueOf(2.99), LocalDate.now());
+		Product coffee = new Product(3, "Coffee", BigDecimal.valueOf(1.99), LocalDate.now());
 
 		
 		order1.addItem(tea);
@@ -106,6 +106,8 @@ public class StreamPerformanceCollect {
 		order3.addItem(coffee);
 		order3.addItem(cake);
 
+		
+		// flatMapping
 		
 		Map<String, Set<Product>> customerProducts =
 				orders.stream()

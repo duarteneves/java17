@@ -1,0 +1,70 @@
+<html lang="pt">
+
+<head>
+
+    <title>Java SE 17</title>
+    
+    <meta charset="utf-8">
+    <meta name="author" content="Duarte Neves">
+
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="logging_exceptions.html">Anterior</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       
+        <h1>Arquitetura</h1>
+
+        <ul>
+            <li>
+                <p>As mensagens de <i>logging</i> podem ser escritas em níveis diferentes.</p>
+            </li>
+            <li>
+                <p>Existe hierarquia na definição da estrutura dos <i>loggers</i>.</p>
+                <ul>
+                    <li>Um <i>logger</i> filho herda o nível do <i>logger</i> pai.</li>
+                    <li>Um <i>logger</i> filho pode redefinir o nível de <i>logger</i> do pai.</li>
+                </ul>
+            </li>
+            <li>
+                <p>Os <i>loggers</i> escrevem as mensagens para um determinado destino. 
+                    Esse destino pode ser parametrizado através da definição do <i>handler</i>.</p>
+                <ul>
+                    <li>Console</li>
+                    <li>File</li>
+                    <li>Memory</li>
+                    <li>Socket</li>
+                    <li>Stream</li>
+                </ul>
+            </li>
+            <li>
+                <p>Os filtros, ou seja, as categorias de <i>logging</i>, podem ser aplicados no <i>Logger</i> ou nos <i>handlers</i>.</p>
+            </li>
+            <li>
+                <p>Os <i>handlers</i> podem assumir formatos de escrita:</p>
+                <ul>
+                    <li>SimleFormatter</li>
+                    <li>XMLFormatter</li>
+                    <li>Customizáveis</li>
+                </ul>
+            </li>
+        </ul>
+
+        <img class="w-640" alt="" src="../images/logging_exceptions/handling.png" />
+
+    </main>
+
+</body>
+
+</html>
