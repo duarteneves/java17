@@ -1,0 +1,56 @@
+<html lang="pt">
+
+<head>
+
+    <title>Java SE 17</title>
+    
+    <meta charset="utf-8">
+    <meta name="author" content="Duarte Neves">
+
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="modulos.html">Anterior</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       
+        <h1>JPMS (<i>Java Platform Module System</i>)</h1>
+
+        <ul>
+            <li>
+                <p>A partir da versão 9, toda a API foi reorganizada em módulos.</p>
+            </li>
+            <li>
+                <p>O nome do módulo deve ser único e tipicamente é definido pelo nome do <i>package</i> onde se encontra definido.</p>
+            </li>
+            <li>
+                <p>Os <i>packages</i> dentro do módulo estão escondidos por omissão.</p>
+            </li>
+            <li>
+                <p>Dependências entre módulos são verificadas no arranque da aplicação.
+                    Erros de <i>deploy</i> como a falta da identificação de módulos são verificados no momento do arranque da aplicação.
+                </p>
+            </li>
+            <li>
+                <p>Não é possível criar dependências circulares.</p>
+            </li>
+            <li>
+                <p>As classes de aplicações modulares são carregadas pela definição do <b>module-path</b> e não do <i>class-path</i>.</p>
+            </li>
+        </ul>
+
+    </main>
+
+</body>
+
+</html>

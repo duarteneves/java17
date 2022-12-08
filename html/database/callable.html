@@ -1,0 +1,66 @@
+<html lang="pt">
+
+<head>
+
+    <title>Java SE 17</title>
+    
+    <meta charset="utf-8">
+    <meta name="author" content="Duarte Neves">
+
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="database.html">Anterior</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       
+        <h1>Callable Statements</h1>
+
+        <ul>
+            <li>
+                <p>A interface <b>java.sql.CallableStatement</b> é usada para invocar funções e procedimentos.</p>
+            </li>
+
+            <li>
+                <p>A susbituição de parâmetros faz-se por susbstituição do símbolo ?
+                    à semelhança do que visto anteriormente para as <i>prepared statements</i>.
+                </p>
+            </li>
+            <li>
+                <p>O registo dos tipos de parâmetros de retorno faz-se a través do método
+                    <b>registerOutParameter(position, type)</b>.
+                </p>
+            </li>
+            <li>
+                <p>A afetação de parâmetros sobre a <i>query</i> pode assumir-se sobre duas formas:</p>
+                <ul>
+                    <li>setXXX(position, value)</li>
+                    <li>setObject(position, value, type)</li>
+                </ul>
+            </li>
+            <li>
+                <p>Após a execução, para obter o valor de para parâmetro de retorno aplicar os métodos:</p>
+                <ul>
+                    <li>getXXX(position)</li>
+                    <li>getObject(position, type)</li>
+                </ul>
+            </li>
+        </ul>
+
+        <img class="w-768" alt="" src="../images/database/callable.png" />
+
+    </main>
+
+</body>
+
+</html>

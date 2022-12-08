@@ -1,0 +1,51 @@
+<html lang="pt">
+
+<head>
+
+    <title>Java SE 17</title>
+    
+    <meta charset="utf-8">
+    <meta name="author" content="Duarte Neves">
+
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="threads.html">Anterior</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       
+        <h1>Wait</h1>
+
+        <ul>
+            <li>
+                <p>É possível suspender uma <i>thread</i> indefinidamente.</p>
+            </li>
+            <li>
+                <p>A classe <i>Object</i>, além dos métodos que já conheces, disponibiliza os métodos <i>wait</i>, <i>notify</i> e <i>notifyAll</i>
+                    que podem ser invocados sobre o <i>monitor object</i>, nomeadamente sempre que esse objeto
+                    esteja dentro de um bloco <i>synchronized</i>.</p>
+                <ul>
+                    <li><i>wait</i> - coloca a <i>thread</i> no estado <i>waiting state</i></li>
+                    <li><i>notify</i> - "acorda" uma das <i>threads</i> em espera (<i>waiting state</i>)</li>
+                    <li><i>notify all</i> - "acorda" todas as <i>threads</i> em espera</li>
+                </ul>
+            </li>
+        </ul>
+
+        <img class="w-768" alt="" src="../images/threads/wait.png" />
+
+    </main>
+
+</body>
+
+</html>

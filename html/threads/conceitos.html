@@ -1,0 +1,59 @@
+<html lang="pt">
+
+<head>
+
+    <title>Java SE 17</title>
+    
+    <meta charset="utf-8">
+    <meta name="author" content="Duarte Neves">
+
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="threads.html">Anterior</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       
+        <h1>Conceitos</h1>
+
+        <ul>
+            <li>
+                <p>Uma <i>thread</i> é um caminho de execução.</p>
+            </li>
+            <li>
+                <p>Cada <i>thread</i> é um objeto que impleta a interface <b>Runnable</b> através de implementação do método <b>run</b>.</p>
+            </li>
+            <li>
+                <p>Uma <i>thread</i> é lançada através da invocação do método <i>start</i>.</p>
+            </li>
+            <li>
+                <p>As <i>threads</i> permitem a execução concorrente e particionada pelos diferentes CPUs existentes.</p>
+            </li>
+            <li>
+                <p>Não é garantido que uma <i>thread</i>, que seja lançada em primeiro lugar, termine antes de uma <i>thread</i>
+                    lançada posteriormente.</p>
+            </li>
+            <li>
+                <p>Se o teu programa for <i>single thread</i> não irá tirar partido dos múltiplos CPUs.</p>
+            </li>                        
+        </ul>
+
+        <img class="w-512" alt="" src="../images/threads/threads.png" />
+
+        <img class="w-768" alt="" src="../images/threads/threads_cpus.png" />
+
+    </main>
+
+</body>
+
+</html>

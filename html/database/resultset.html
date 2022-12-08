@@ -1,0 +1,59 @@
+<html lang="pt">
+
+<head>
+
+    <title>Java SE 17</title>
+    
+    <meta charset="utf-8">
+    <meta name="author" content="Duarte Neves">
+
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="database.html">Anterior</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       
+        <h1>Result Set</h1>
+
+        <ul>
+            <li>
+                <p>A interface <b>java.sql.Result</b> permite iterar e obter os resutlado da resposta SQL.</p>
+            </li>
+            <li>
+                <p>Através do método <b>next()</b> podemos iterar o conjunto de resutlados.
+                    Este método retorna <b>true</b> se ainda existirem resultados e <b>false</b> caso já não existam.
+                    Quando o valor retornado é <i>true</i> o apontador muda para o próximo objeto,
+                    este comportamento permite aplicar as seguintes operações sobre esse elemento.</p>
+            </li>
+            <li>
+                <p>Para obter os valores de cada coluna, o programador pode aplicar um dos seguintes métodos:</p>
+                <ul>
+                    <li>getXXX(column_position)</li>
+                    <li>getXXX(column_name)</li>
+                    <li>getObject(column_position, class)</li>
+                    <li>getObject(column_name, class)</li>
+                </ul>
+            </li>
+            <li>
+                <p>A primeira posição começa com o valor 1.</p>
+            </li>
+        </ul>
+
+        <img class="w-768" alt="" src="../images/database/resultset.png" />
+
+    </main>
+
+</body>
+
+</html>

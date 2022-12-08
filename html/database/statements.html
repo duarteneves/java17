@@ -1,0 +1,57 @@
+<html lang="pt">
+
+<head>
+
+    <title>Java SE 17</title>
+    
+    <meta charset="utf-8">
+    <meta name="author" content="Duarte Neves">
+
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="database.html">Anterior</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       
+        <h1>Statements</h1>
+
+        <ul>
+            <li>
+                <p>A interface <b>java.sql.Statement</b> representa todos os tipos de instruções SQL.</p>
+            </li>
+            <li>
+                <p>Uma vez obtida a <i>connection</i> e a partir da <i>connection</i> o bjeto da interface <i>Statement</i>
+                    a API permite invocar instruções: <b>select</b>, <b>insert</b>, <b>update</b>, <b>delete</b>, <b>create</b>, <b>alter</b> e <b>drop</b>.</p>
+            </li>
+        </ul>
+
+        <img class="w-768" alt="" src="../images/database/statements_exemplos.png" />
+
+
+        <ul>
+            <li>
+                <p>A utilização de <i>statements</i> tem desvantagens quando comparadas com as <i>prepared</i> e <i>callable</i>
+                    <i>statements</i> que vimos anteriormente.</p>
+                <ul>
+                    <li>permitem concatenação de <i>queries</i> o que aumenta o risco de <i>SQL Injection</i></li>
+                    <li>as instruções têm de ser <i>parsed</i> e recompiladas antes de cada execução</li>
+                </ul>
+            </li>
+        </ul>
+
+    </main>
+
+</body>
+
+</html>

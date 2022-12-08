@@ -1,0 +1,50 @@
+<html lang="pt">
+
+<head>
+
+    <title>Java SE 17</title>
+    
+    <meta charset="utf-8">
+    <meta name="author" content="Duarte Neves">
+
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="threads.html">Anterior</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       
+        <h1>Non blocking</h1>
+
+        <ul>
+            <li>
+                <p>As classes <b>CopyOnWriteArryaList</b>  e <b>CopyOnWriteArraySet</b> disponibilizam variantes <i>thread-safe</i> de <i>List</i> e <i>Set</i>.</p>
+            </li>
+            <li>
+                <p>Todas as operações de mudança de estado, como <i>add</i> e <i>remove</i> criam uma cópia da <i>collection</i>.</p>
+            </li>
+            <li>
+                <p>Quando as <i>threads</i> terminam é feito um merge de todas as cópias.</p>
+            </li>
+            <li>
+                <p>Esta é a melhor solução para conjuntos pequenos quando operações de leitura superam significativamente operações de alteração de estado.</p>
+            </li>
+        </ul>
+
+        <img class="w-768" alt="" src="../images/threads/non_blocking.png" />
+
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<html lang="pt">
+
+<head>
+
+    <title>Java SE 17</title>
+    
+    <meta charset="utf-8">
+    <meta name="author" content="Duarte Neves">
+
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="cloud.html">Anterior</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       
+        <h1>Java EE vs Microsserviços</h1>
+
+        <ul>
+            <li>
+                <p>Por um lado temos as aplicações Java EE a correr sobre <i>Weblogic</i> que se definem pelas seguintes
+                    caraterísticas:</p>
+                <ul>                            
+                    <li>todas as operações correm sobre o mesmo servidor aplicacional</li>
+                    <li>disponibiliza <i>containers</i> Web e EJB</li>
+                    <li>disponibiliza módulo de segurança, concorrência, gestor transacional, etc...</li>
+                </ul>
+            </li>
+        </ul>  
+        
+        <img class="w-640" alt="" src="../images/cloud/javaee_server.png" />
+
+        <ul>
+            <li>
+                <p>Do outro lado temos mais uma das últimas tendências que é a implementação de microsserviços.
+                    Neste âmbito o Java recomenda a integração da biblioteca <a href="https://helidon.io/"><i>Helidon</i></a>,
+                    sendo que, podem existir 2 tipos de aplicação, <b>Java SE</b> e <b>Java MP Server</b>.
+                </p>
+                <p>Java SE:</p>
+                <ul>
+                    <li>servidor com capacidade limitadas</li>
+                    <li><i>hosting</i> de aplicações microsserviços</li>
+                </ul>
+                <p>Java MP Server:</p>
+                <ul>
+                    <li>integra um <i>container</i> "leve"</li>
+                    <li>disponibiliza um sub conjunto de <i>features</i> Java EE</li>
+                    <li><i>hosting</i> de aplicações microsserviços</li>
+                </ul>
+
+            </li>
+
+        </ul>                
+
+        <img class="w-512" alt="" src="../images/cloud/javaee_microsservicos.png" />
+
+    </main>
+
+</body>
+
+</html>

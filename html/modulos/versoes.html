@@ -1,0 +1,55 @@
+<html lang="pt">
+
+<head>
+
+    <title>Java SE 17</title>
+    
+    <meta charset="utf-8">
+    <meta name="author" content="Duarte Neves">
+
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="modulos.html">Anterior</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       
+        <h1>Versões</h1>
+
+        <ul>
+            <li>
+                <p>É possível, com uma aplicação Java modular, suportar múltiplas versões da nossa aplicação,
+                    tendo em conta diferentes versões Java.</p>
+            </li>
+            <li>
+                <p>À semelhança do apresentado anteriormente, tem de estar presente na raíz do <i>package</i> a definição 
+                    do ficheiro module-info.java.</p>
+            </li>
+            <li>
+                <p>Deve ser especificada, na pasta <i>versions</i> a versão que pretendemos dar suporte.</p>
+            </li>
+            <li>
+                <p>Em cada versão deve estar presente o conteúdo do <i>package</i> em questão.
+                    Nesse conteúdo a presenta do ficheiro module-info.java é opcional, mas a existirem devem ser idênticos
+                    à versão original, exceto na definição de <i>non-transitive requires</i> e na definição da cláusula <i>use</i>.
+                </p>
+            </li>
+        </ul>
+
+        <img class="w-512" alt="" src="../images/modulos/versoes.png" />
+
+    </main>
+
+</body>
+
+</html>

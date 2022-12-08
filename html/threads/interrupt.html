@@ -1,0 +1,54 @@
+<html lang="pt">
+
+<head>
+
+    <title>Java SE 17</title>
+    
+    <meta charset="utf-8">
+    <meta name="author" content="Duarte Neves">
+
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="threads.html">Anterior</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       
+        <h1>Interrupt</h1>
+
+        <ul>
+            <li>
+                <p>A lógica do método <i>run</i> é responsável por tomar decisões relativas ao ciclo de vida da sua <i>thread</i>.</p>
+            </li>
+            <li>
+                <p>Uma <i>thread</i> em <i>runnable</i> deve verificar se recebe um sinal de interrupção.</p>
+            </li>
+            <li>
+                <p>Uma <i>thread</i> que entre num estado de <i>waiting</i> ou <i>timed waiting</i> se apanhar uma
+                    exceção <b>InterrupterException</b> volta ao seu estado de <i>runnable</i> e depois aí decide o que fazer.</p>
+            </li>
+            <li>
+                <p>A exceção pode ser lançada a partir de qualquer outra <i>thread</i>.</p>
+            </li>
+            <li>
+                <p>O método <b>interrupt()</b> para ser considerado tem de ser interpretado na lógica do método <i>run</i>.</p>
+            </li>
+        </ul>
+
+        <img class="w-768" alt="" src="../images/threads/interrupt.png" />
+
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<html lang="pt">
+
+<head>
+
+    <title>Java SE 17</title>
+    
+    <meta charset="utf-8">
+    <meta name="author" content="Duarte Neves">
+
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="database.html">Anterior</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       
+        <h1>JDBC (<i>Java Database Connectivity</i>)</h1>
+
+        <ul>
+            <li>
+                <p>A API JDBC disponibiliza uma interface para interagir com base de dados.
+                    Esta interface está definida no <i>package</i> <b>java.sql</b>.
+                </p>
+            </li>
+            <li>
+                <p>Não é específica de um <i>provider</i> como MySQL, Oracle, SQL Server, Derby, H2 ou qualquer outro.</p>
+            </li>
+            <li>
+                <p>O <i>driver</i> JDBC é uma implementação da interface disponível na API.</p>
+            </li>
+            <li>
+                <p>A configuração do acesso a uma base de dados implica a integração do <i>driver</i> JDBC de acordo 
+                    com o <i>provider</i> e versão da base de dados para melhor integração.
+                    O <i>driver</i> deve estar disponível na <i>class path</i> ou <i>module path</i> da aplicação.</p>
+            </li>
+            <li>
+                <p>O <i>driver</i> deve ser selecionado no momento de criação da base de dados e é apresentado sobre o
+                    formato de url:</p>
+            </li>
+        </ul>
+
+        <img class="w-768" alt="" src="../images/database/jbdc_url.png" />
+
+        <img class="w-768" alt="" src="../images/database/jdbc_arquitetura.png" />
+
+        <ul>
+            <li>
+                <p>A API JDBC disponibilza as seguintes API:</p>
+                <ul>
+                    <li><b><span class="red">DriverManager</span></b> - classe para gerir o <i>driver</i> e obter a conexão</li>
+                    <li><b><span class="orange">Connection</span></b> - interface representativa da sessão com a base de dados</li>
+                    <li><b><span class="blue">Statement</span></b> - interface que representa a instrução SQL</li>
+                    <li><b><span class="blue">PreparedStatement</span></b> - interface que representa a instrução SQL pré compilada</li>
+                    <li><b><span class="blue">CallableStatement</span></b> - interface que representa invocações de funções ou procedimentos SQL</li>
+                    <li><b><span class="green">ResultSet</span></b> - interface representativa do conjunto de linhas, resultado da execução da instrução SQL</li>
+                </ul>
+            </li>
+            <li>
+                <p>Todas as interfaces implementação AutoCloseable.</p>
+            </li>
+            <li>
+                <p>Operações JDBC podem lançar a exceção <span class="purple">SQLException</span>.</p>
+            </li>
+        </ul>
+
+        <img class="w-768" alt="" src="../images/database/jdbc_api.png" />
+
+    </main>
+
+</body>
+
+</html>

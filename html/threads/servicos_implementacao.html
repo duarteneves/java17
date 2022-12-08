@@ -1,0 +1,59 @@
+<html lang="pt">
+
+<head>
+
+    <title>Java SE 17</title>
+    
+    <meta charset="utf-8">
+    <meta name="author" content="Duarte Neves">
+
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="threads.html">Anterior</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       
+        <h1>Implementação</h1>
+
+        <ul>
+            <li>
+                <p>Para implementação de serviços podemos optar por um de dois tipos: <i>Runnable</i> ou <i>Callable</i></p>
+            </li>
+            <li>
+                <p>Os seviços <i>runnable</i> são implementados com a definição do método <b>public void run()</b> da interface <i>Runnable</i>.
+                    Sendo que para executar o serviço a API da interface <b>ExecutorService</b> disponibiliza os métodos <b>execute</b> ou <b>submit</b>.</p>
+            </li>
+            <li>
+                <p>Os serviços <i>callable</i> são implementados através da definição do método <b>public &lt;T&gt; call()</b> da interface <i>Callable</i>.</p>
+            </li>
+            <li>
+                <p>O método <i>submit</i>, como o nome indica submete uma tarefa para execução.
+                    Retorna um objeeto <b>Future</b> que representa os resutlados de execução daquela tarefa.</p>
+            </li>
+
+            <!-- indicar mais dos 10 segundos, timoweout -->
+            <li>
+                <p>Por sua vez, o método <b>get</b> da interface <i>Future</i>, no exemplo da imagem seguinte,
+                    bloqueia a <i>thread</i> corrente durante 10 segundos, após esse <i>timeout</i> o valor dentro
+                    do objeto <i>Future</i> é disponibilizado.</p>
+            </li>
+        </ul>
+
+        <img class="w-768" alt="" src="../images/threads/servicos_implementacao.png" />
+
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<html lang="pt">
+
+<head>
+
+    <title>Java SE 17</title>
+    
+    <meta charset="utf-8">
+    <meta name="author" content="Duarte Neves">
+
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="threads.html">Anterior</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       
+        <h1>Volatile</h1>
+
+        <ul>
+            <li>
+                <p>A memória partilhada abordada no slide anterior, na verdade, pode criar outro problema.
+                    Verifica a imagem apresentada.
+                </p>
+            </li>
+            <li>
+                <p>A memória partilhada é uma otimização da JVM que permite o acesso a variáveis de forma mais rápida.
+                    Para cenários de apenas uma <i>thread</i> não há qualquer inconviniencia.
+                </p>
+            </li>
+        </ul>
+
+        <img class="w-1024" alt="" src="../images/threads/shared_data.png" />
+
+        <ul>
+            <li>
+                <p>A palavra <b>volatile</b> desabilita essa otimização e não permite a cópia.
+                    Neste caso a leitura fa-se-á na <i>heap</i>.</p>
+            </li>
+        </ul>
+
+    </main>
+
+</body>
+
+</html>

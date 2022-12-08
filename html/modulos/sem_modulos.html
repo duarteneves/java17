@@ -1,0 +1,69 @@
+<html lang="pt">
+
+<head>
+
+    <title>Java SE 17</title>
+    
+    <meta charset="utf-8">
+    <meta name="author" content="Duarte Neves">
+
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="modulos.html">Anterior</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       
+        <h1>Sem módulos</h1>
+
+        <ul>
+            <li>
+                <p>Compilar, criar e executar aplicações Java não modelares.</p>
+            </li>
+            <li>
+                <p>O ficheiro <b>MANIFEST.MF</b> é opcional, muitas vezes gerado pelos próprios IDEs.
+                    Contém meta dados com informação realtivo ao conteúdo do ficheiro jar. </p>
+            </li>
+        </ul>
+
+        <img class="w-512" alt="" src="../images/modulos/jar.png" />
+
+        <ul>
+            <li>
+                <p>Os <i>packages</i> permitem agrupar classes por lógica ou responsabilidade.</p>
+            </li>
+            <li>
+                <p>A definição de <i>packages</i> não impõe por si só uma restrição de como podem ser visualizados por outras aplicações Java.</p>
+            </li>
+            <li>
+                <p>A visiblidade de classes é definida polos modificadores de acesso <b>public</b> e <b>default</b>.</p>
+            </li>
+            <li>
+                <p>O encapsulamento pode ser ultrapassado usando <i>reflection</i>. É possível, por exemplo, invocar métodos privados.</p>
+            </li>
+            <li>
+                <p>Não é possível definir que <i>packages</i> podem ser ou não ser usados por outras aplicações Java.</p>
+            </li>
+            <li>
+                <p>No momento criação do jar ou de arranque da aplicação, não é validado se todas as dependências do programa 
+                    estão em conformidade.</p>
+            </li>
+        </ul>
+
+        <img class="w-768" alt="" src="../images/modulos/package.png" />
+
+    </main>
+
+</body>
+
+</html>

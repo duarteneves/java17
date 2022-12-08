@@ -1,0 +1,59 @@
+<html lang="pt">
+
+<head>
+
+    <title>Java SE 17</title>
+    
+    <meta charset="utf-8">
+    <meta name="author" content="Duarte Neves">
+
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="database.html">Anterior</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       
+        <h1>Transações</h1>
+
+        <ul>
+            <li>
+                <p>Transações definem uma série de ações sobre a base de dados.
+                    Se uma transação falhar, todas as outras ações sobre a mesma transação devem falhar, deixando o estado 
+                    do programa inalterado.
+                    Correndo bem ou não a transação deve sempre terminar com a invocação de um dos seguintes métodos:
+                </p>
+                <ul>
+                    <li>commit - todas as alterações são persistidas alterando o estado</li>
+                    <li>rollback - descartas as alterações pendentes e liberta a <i>connection</i></li>
+                </ul>
+            </li>
+            <li>
+                <p>Por omissão as <i>connections</i> JDBC são <i>auto-commit</i>. O método <i>commit</i> 
+                    é invocado sempre que em cada invocação de uma instrução SQL.</p>
+            </li>
+            <li>
+                <p>É possível definir <i>save points</i> através de invocação do método <b>setSavePoint</b>,
+                    neste caso o <i>rollback</i> caso seja invocado apenas descartas operações efetuadas depois do
+                    <i>save point</i>.
+                </p>
+            </li>
+        </ul>
+
+        <img class="w-768" alt="" src="../images/database/transacoes.png" />
+
+    </main>
+
+</body>
+
+</html>

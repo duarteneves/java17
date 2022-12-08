@@ -1,0 +1,60 @@
+<html lang="pt">
+
+<head>
+
+    <title>Java SE 17</title>
+    
+    <meta charset="utf-8">
+    <meta name="author" content="Duarte Neves">
+
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="threads.html">Anterior</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       
+        <h1>Block</h1>
+
+        <ul>
+            <li>
+                <p>É possível bloquear uma <i>thread</i> recorrendo ao designado objeto de monitorização, <i>monitor object</i>.</p>
+            </li>
+            <li>
+                <p>Qualquer classe ou objeto pode ser <i>monitor</i> e permite às <i>threads</i> entrarem em modo <i>blocked</i> ou <i>waiting</i>.</p>
+            </li>
+            <li>
+                <p>Uma <i>thread</i> que entre num estado de <i>waiting</i> ou <i>timed waiting</i> se apanhar uma
+                    exceção <b>InterrupterException</b> volta ao seu estado de <i>runnable</i> e depois aí decide o que fazer.</p>
+            </li>
+        </ul>
+
+        <img class="w-1024" alt="" src="../images/threads/block_monitor.png" />
+
+        <ul>
+            <li>
+                <p>A <i>keyword</i> <i><b>synchronized</b></i> força um acesso exclusivo do respetivo bloco de código.</p>
+            </li>
+            <li>
+                <p>Todas as outras <i>threads</i> que tentem aceder ao mesmo bloco entram em modo <i>blocked</i>.</p>
+            </li>
+            <li>
+                <p>Quando a <i>thread</i> sai do bloco <i>synchronized</i> o <i>lock</i> é libertado.</p>
+            </li>
+        </ul>
+
+    </main>
+
+</body>
+
+</html>

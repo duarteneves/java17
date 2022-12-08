@@ -1,0 +1,51 @@
+<html lang="pt">
+
+<head>
+
+    <title>Java SE 17</title>
+    
+    <meta charset="utf-8">
+    <meta name="author" content="Duarte Neves">
+
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="threads.html">Anterior</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       
+        <h1>Serviços</h1>
+
+        <ul>
+            <li>
+                <p>A classe <b>java.util.concurrent.Executors</b> disponibiliza um número de gestores de <i>threads</i> que
+                    nos permitem criar serviços de acordo com determinadas caraterísticas:</p>
+                <ul>
+                    <li><b><i>Fixed Thread Pool</i></b> - reutiliza um nº fixo de <o>threads</o></li>
+                    <li><b><i>Work Stealing Pool</i></b> - mantém o nº de <i>threads</i> suficiente para suportar um nível de paralelismo</li>
+                    <li><b><i>Single Thread Executor</i></b> - usa uma única <i>thread</i></li>
+                    <li><b><i>Cached Thread Pool</i></b> - criar novas <i>threads</i> de acordo com a necessidade ou reutiliza as <i>threads</i> existentes</li>
+                    <li><b><i>Scheduled Thread Pool</i></b> - programa tarefas para serem executadas periodicamente ou a partir de determinado tempo</li>
+                    <li><b><i>Single Thread Scheduler Pool</i></b> - programa tarefas para serem executadas usando apenas uma única <i>thread</i></li>
+                    <li><b><i>Unconfigurable executor Service</i></b> - disponibiliza um modo para "congelar" outra configuração de serviço</li>
+                </ul>                    
+            </li>
+        </ul>
+
+        <img class="w-768" alt="" src="../images/threads/servicos.png" />
+
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<html lang="pt">
+
+<head>
+
+    <title>Java SE 17</title>
+    
+    <meta charset="utf-8">
+    <meta name="author" content="Duarte Neves">
+
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="modulos.html">Anterior</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       
+        <h1>Dependências</h1>
+
+        <ul>
+            <li>
+                <p>Para definir que módulos, o nosso módulo depende, no ficheiro modelo-info.java devemos identificar 
+                    a palavra <b>requires</b>. Esta palavra pode ainda ser acompanhada de <b>transitive</b> ou <b>static</b>.</p>
+            </li>
+            <li>
+                <p>Exemplo 1: O módulo <b>com.some</b> necessita de acesso ao módulo ao módulo <b>java.logging</b>.</p>
+            </li>
+            <li>
+                <p>Exemplo 2: Qualquer módulo de use <b>com.some</b> também usará o módulo <b>org.acme</b>, contudo
+                    neste caso o novo módulo não precisa de declarar explicitamente a dependência.</p>
+            </li>
+            <li>
+                <p>Exemplo 3: Indica que a dependência é opcional e o seu uso apenas é necessário no momento de compilação.</p>
+            </li>
+        </ul>
+
+        <img class="w-512" alt="" src="../images/modulos/dependencias.png" />
+
+        <ul>
+            <li>
+                <p>As instruções anteriores aceitam múltiplos módulos seprados por ','.</p>
+            </li>
+            <li>
+                <p>A definição <b>requires java.base</b> está implícita em todos os módulos.</p>
+            </li>
+        </ul>
+
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<html lang="pt">
+
+<head>
+
+    <title>Java SE 17</title>
+    
+    <meta charset="utf-8">
+    <meta name="author" content="Duarte Neves">
+
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="modulos.html">Anterior</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       
+        <h1>O que é um módulo?</h1>
+
+        <ul>
+            <li>
+                <p>Um módulo é uma agregação de alto nível que compreende um ou mais módulos e outros recursos como imagens, por exemplo.</p>
+            </li>
+            <li>
+                <p>Uma aplicação definda por módulos deve ter definido um ficheiro <b>module-info.java</b> presente na <i>root</i>
+                    da definição de cada módulo. Este ficheiro pode ter definidas as seguintes propriedades:</p>
+                <ul>
+                    <li>nome do módulo - deve único, por exemplo com.yourcompany.whatever</li>
+                    <li><i>requires</i> - dependências necessárias, identificação de outros módulos de que este módulo depende</li>
+                    <li><i>exports</i> - <i>packages</i> que o módulo exporta, tornando-os disponíveis para outros módulos</li>
+                    <li><i>opens</i> - identificar <i>packages</i> que estão acessíveis via <i>reflection</i></li>
+                    <li><i>uses</i> - serviços usados pelo módulo disponíveis por outros módulos</li>
+                    <li><i>provides</i> - serviços disponibilizados pelo módulos e a respetiva implementação</li>
+                </ul>
+            </li>
+        </ul>
+
+        <img class="w-768" alt="" src="../images/modulos/modulo.png" />
+
+    </main>
+
+</body>
+
+</html>

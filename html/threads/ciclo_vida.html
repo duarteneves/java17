@@ -1,0 +1,72 @@
+<html lang="pt">
+
+<head>
+
+    <title>Java SE 17</title>
+    
+    <meta charset="utf-8">
+    <meta name="author" content="Duarte Neves">
+
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="threads.html">Anterior</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       
+        <h1>Ciclo de vida</h1>
+
+        <ul>
+            <li>
+                <p>É possível ir de qualquer estado da <i>thread</i> para <i>runnable</i> exceto <i>terminated</i>.</p>
+            </li>
+            <li>
+                <p>A partir de <i>runnable</i> é possível ir para qualquer estado exceto <i>new</i>.</p>
+            </li>
+            <li>
+                <p>Descrição dos ciclos de vida</p>
+                <ul>
+                    <li><i>new</i> - <i>thread instânciada</i></li>
+                    <li><i>runnable</i> - <i>thread em execução</i></li>
+                    <li><i>blocked</i> - <i>thread bloqueada até a monitorização dar um sinal que já não existe bloqueio</i></li>
+                    <li><i>waiting</i> - <i>thread em espera até receber sinal de outra thread em execução</i></li>
+                    <li><i>time_waiting</i> - <i>thread em espera durante um determinado tempo</i></li>
+                    <li><i>terminated</i> - <i>thread terminada</i></li>
+                </ul>
+            </li>
+            <li>
+                <p>As alterações de estados não são imediatas, o processamento da <i>thread</i> precisa de alocar uma <i>slot</i> no CPU disponível.</p>
+            </li>
+        </ul>
+
+        <img class="w-512" alt="" src="../images/threads/ciclo_vida.png" />
+
+        <ul>
+            <li>
+                <p>A mesma instância de <i>runnable</i> pode ser lançada por mais do que uma <i>thread</i>.</p>
+            </li>
+            <li>
+                <p>É possível verificar se uma <i>thread</i> ainda não terminou.</p>
+            </li>
+            <li>
+                <p>A mesma <i>thread</i> não pode arrancar mais do que uma vez.</p>
+            </li>
+        </ul>
+
+        <img class="w-512" alt="" src="../images/threads/ciclo_vida_exemplos.png" />
+
+    </main>
+
+</body>
+
+</html>

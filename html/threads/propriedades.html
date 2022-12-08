@@ -1,0 +1,68 @@
+<html lang="pt">
+
+<head>
+
+    <title>Java SE 17</title>
+    
+    <meta charset="utf-8">
+    <meta name="author" content="Duarte Neves">
+
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="threads.html">Anterior</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       
+        <h1>Propriedades</h1>
+
+        <ul>
+            <li>
+                <p>As <i>threadas</i> podem ser definidas por um nome personalizado e cada <i>thread</i> tem um identificador único.</p>
+            </li>
+            <li>
+                <p>Uma <i>thread</i> pode ser categorizada como um <i><b>deamon</b></i> ou <i><b>user</b></i> (<i>default</i>).</p>
+            </li>
+            <li>
+                <p><i>Daemon threads</i> são de baixa prioridade e por esse motivo são executadas em <i>background</i>.
+                    As <i>user threads</i> foram desenhadas para executarem tarefas complexas, enquanto que as 
+                    <i>daemon threads</i> devem ser usadas para suporte ou monitorização de outras tarefas.</p>
+            </li>
+            <li>
+                <p>Enquanto existirem <i>user threads</i> a JVM não termina, no entanto, não existindo este tipo de <i>threads</i>,
+                    mesmo que existam <i>daemon threads</i> a JVM termina e força estas <i>threads</i> a terminar.</p>
+            </li>
+            <li>
+                <p>Pode ser definida uma prioridade a cada <i>thread</i>. A prioridade não garante a ordem de execução, 
+                    mas determina o número de slots de CPU que lhe vai ser dedicado.</p>
+                <ul>
+                    <li><b>Thread.MAX_PRIORITY (10)</b></li>
+                    <li><b>Thread.MIN_PRIORITY (1)</b></li>
+                    <li><b>Thread.NORM_PRIORITY (5)</b>(<i>default</i>)</li>
+                </ul>
+            </li>
+            <li>
+                <p>O método <b>setDeamon</b> só pode ser invocado antes da <i>thread</i> avançar para <i>runnable</i>.</p>
+            </li>
+            <li>
+                <p>O método <b><i>join</i></b> espera a <i>thread</i> corrente até a <i>thread</i> que invoca o método terminar.</p>
+            </li>
+        </ul>
+
+        <img class="w-768" alt="" src="../images/threads/propriedades.png" />
+
+    </main>
+
+</body>
+
+</html>

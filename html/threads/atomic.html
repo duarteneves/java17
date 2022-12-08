@@ -1,0 +1,66 @@
+<html lang="pt">
+
+<head>
+
+    <title>Java SE 17</title>
+    
+    <meta charset="utf-8">
+    <meta name="author" content="Duarte Neves">
+
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="threads.html">Anterior</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       
+        <h1>Atomic</h1>
+
+        <ul>
+            <li>
+                <p>Uma ação atómica é aquela que é tratada sem interrupção. 
+                    É uma ação avaliada num único ciclo de CPU.
+                </p>
+            </li>
+            <li>
+                <p>Em platafomas de 32 bits, por exemplo, a afetação de variáveis <i>long</i> ou <i>double</i>,
+                    variáveis de 64 bits, é necessário mais do que um momento de processamento.
+                </p>
+            </li>
+            <li>
+                <p>Mesmo operações como + - / * % ++ -- não são atómicas.</p>
+            </li>
+            <li>
+                <p>Como forçar estas operações a serem atómicas? É possível?
+                    O <i>package</i> <b>java.util.concurrent.atomic</b> disponibiliza classes <i>wrapper</i> que implementam comportamentos atómicos
+                    sobre variáveis.
+                </p>
+                <ul>
+                    <li>AtomicBoolean</li>
+                    <li>AtomicInteger</li>
+                    <li>AtomicLong</li>
+                    <li>AtomicReference&lt;V&gt;</li>
+                </ul>
+            </li>
+            <li>
+                <p>Variáveis <i>atomic</i> comportam-se como voláteis.</p>
+            </li>
+        </ul>
+
+        <img class="w-768" alt="" src="../images/threads/atomic.png" />
+
+    </main>
+
+</body>
+
+</html>

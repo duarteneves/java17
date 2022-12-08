@@ -1,0 +1,80 @@
+<html lang="pt">
+
+<head>
+
+    <title>Java SE 17</title>
+    
+    <meta charset="utf-8">
+    <meta name="author" content="Duarte Neves">
+
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="cloud.html">Anterior</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       
+        <h1><i>Package</i> e <i>Deploy</i></h1>
+
+        <div class="row">
+
+            <div class="col-6">
+
+                <ul>
+                    <li>
+                        <p>Java EE:</p>
+                        <ul>                            
+                            <li><i><span class="orange">enterprise archives</span></i> (ear), 
+                                <i><span class="green">web archives</span></i> (war) e 
+                                <i><span class="blue">java archives</span></i> (jar)</li>
+                            <li>Java EE <i><span class="purple">server</span></i> que corre sobre a sua <span class="red">JVM</span></li>
+                            <li>múltiplas aplicações podem ser <i>deployed</i> sobre o mesmo servidor Java EE</li>
+                        </ul>
+                    </li>
+                </ul>  
+                
+                <img class="w-256" alt="" src="../images/cloud/package_deploy_javaee.png" />
+
+            </div>
+
+            <div class="col-6">
+                <ul>
+                    <li>            
+                        <p>Java SE / MP:</p>
+                        <ul>
+                            <li><i><span class="blue">java archives</span></i> (jar)</li>
+                            <li>pode ser <i>packaged</i> a partir de <i>Java Image</i></li>
+                            <li><i><span class="purple">server</span></i> arranca a partir do código da aplicação</li>
+                            <li>cada aplicação corre sobre a sua <span class="red">JVM</span></li>
+                        </ul>
+                    </li>
+
+                </ul>                
+
+                <img class="w-256" alt="" src="../images/cloud/package_deploy_javase.png" />
+
+            </div>
+
+        </div>
+
+        <ul>
+            <li>            
+                <p>O Java recomenda o uso de Maven para automatizar e gerir o <i>deployment</i> da aplicação Java.</p>
+            </li>
+        </ul>
+    
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<html lang="pt">
+
+<head>
+
+    <title>Java SE 17</title>
+    
+    <meta charset="utf-8">
+    <meta name="author" content="Duarte Neves">
+
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="threads.html">Anterior</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       
+        <h1>Thread-Safe</h1>
+
+        <ul>
+            <li>
+                <p>Cada <i>thread</i> opera sobre a sua prórpia <i><span class="blue">stack</span></i>, 
+                    não é possível outra <i>thread</i> aceder aquelas posições de memória.</p>
+            </li>
+            <li>
+                <p>Objetos imutáveis, mesmo os definidos na <i>heap</i> são <i><span class="green">thread-safe</span></i>.</p>
+            </li>
+            <li>
+                <p>Objetos mutáveis partilhados na <i>heap</i> são <i><span class="red">thread-unsafe</span></i>.</p>
+            </li>
+            <li>
+                <p>A <i>heap</i> é partilhada por todas as <i>threads</i>.
+                    Os valores presentes na <i>heap</i> que são passíveis de ser alterados podem ficar:</p>
+                <ul>
+                    <li>inconsistentes - se são observador por outras <i>threads</i> antes da alteração ser completa</li>
+                    <li>corrompidos - forem parcialmente alterados por outra <i>thread</i> e escritos em memória ao mesmo tempo</li>
+                </ul>
+            </li>
+        </ul>
+
+        <img class="w-1024" alt="" src="../images/threads/thread_safe.png" />
+
+        <ul>
+            <li>
+                <p>Para resolver a questão devemos usar objetos imutáveis sempre que possível.</p>
+            </li>
+            <li>
+                <p><span class="purple">Copiar</span> para a <i>stack</i> da <i>thread</i> a vaiável da <i>heap</i>, não resolve de forma definitiva o problema, mas podes diminur as probabilidades.</p>
+            </li>
+        </ul>
+
+    </main>
+
+</body>
+
+</html>

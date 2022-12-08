@@ -1,0 +1,71 @@
+<html lang="pt">
+
+<head>
+
+    <title>Java SE 17</title>
+    
+    <meta charset="utf-8">
+    <meta name="author" content="Duarte Neves">
+
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="seguranca.html">Anterior</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       
+        <h1>Permissões</h1>
+
+        <ul>
+            <li>
+                <p>A API Java permite a verificação de permissões sobre a nossa aplicação e respetivos recursos.
+                    Todas as permissões definidas no ficheiro <b>java.policy</b> descendem da classe 
+                    <b>java.security.Permission</b>.
+                </p>
+            </li>
+
+            <li>
+                <p>A recomendação é que se verifiquem permissões antes de atuar sobre os recursos da aplicação.</p>
+            </li>
+            <li>
+                <p>Se o acesso a determinado recurso for negado pela definição da política de segurança, a API lança uma
+                    <b>AccessControlException</b>.</p>
+            </li>
+        </ul>
+
+        <img class="w-768" alt="" src="../images/seguranca/permissoes.png" />
+
+        <ul>
+            <li>
+                <p>Uma vez verificada a permissão a ação sobre o recurso deve fazer-se da seguinte forma:</p>
+                <ul>
+                    <li>definir o método estático <b>doProvileged</b> da classe <b>AccessController</b></li>
+                    <li>criar uma instância de <b>PrivilegedAction</b> e implementar o método <b>run</b>.</li>
+                </ul>
+            </li>
+            <li>
+                <p>O bloco de código do método <i>run</i> deve conter apenas código que foi definido nas 
+                    no ficheiro <b>java.policy</b>.</p>
+            </li>
+            <li>
+                <p>Fora deste bloco de código, não é suposto interagir com o recurso definido nas permissões.</p>
+            </li>
+        </ul>
+
+        <img class="w-768" alt="" src="../images/seguranca/permissoes_acao.png" />
+
+    </main>
+
+</body>
+
+</html>

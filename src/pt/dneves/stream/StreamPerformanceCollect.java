@@ -65,8 +65,6 @@ public class StreamPerformanceCollect {
 		
 		// groupingBy
 		
-		// TODO - os produtos não têm data. Alterar o construtor
-		
 		Map<LocalDate, List<Product>> groups = products.stream()
 					.collect(Collectors.groupingBy(p -> p.getBestBefore()));
 				

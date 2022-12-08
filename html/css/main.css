@@ -31,19 +31,23 @@ body {
  * colors
  */
 .blue {
-  color: blue;
+  color: rgb(64, 140, 255);
 }
 
  .green {
-  color: green;
+  color: rgb(34, 175, 34);
+}
+
+.purple {
+  color: rgb(235, 43, 235);
 }
 
 .red {
   color: red;
 }
 
-.yellow {
-  color: yellow;
+.orange {
+  color: orange;
 }
 
 

@@ -5,9 +5,6 @@ import java.time.LocalDate;
 
 public class Product implements Cloneable { //implements Comparable<Product> {
 
-	// TODO COLCOAR ESTE exemplos - constantes
-//	private final String XPTO;
-	
 	private int id = -1;
 	private String name;
 	private BigDecimal price;
@@ -18,7 +15,6 @@ public class Product implements Cloneable { //implements Comparable<Product> {
 
 	public Product() {
 		// do nothing
-//		super();
 	}
 
 	public Product(String name) {

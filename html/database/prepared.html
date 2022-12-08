@@ -1,0 +1,59 @@
+<html lang="pt">
+
+<head>
+
+    <title>Java SE 17</title>
+    
+    <meta charset="utf-8">
+    <meta name="author" content="Duarte Neves">
+
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="database.html">Anterior</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       
+        <h1>Prepared Statements</h1>
+
+        <ul>
+            <li>
+                <p>A interface <b>java.sql.PreparedStatement</b> representa instruções SQL pré compiladas.</p>
+            </li>
+            <li>
+                <p>Executa qualquer operação SQL.</p>
+            </li>
+            <li>
+                <p>As instruções são construídas como vimos anteriormente, mas agora em vez de estarem concatenadas com os atributos
+                    que vão afetar a <i>query</i>, têm presentes o símbolo ? que identifica parâmetros da <i>query</i>.
+                </p>
+            </li>
+            <li>
+                <p>A afetação de parâmetros sobre a <i>query</i> pode assumir-se sobre duas formas:</p>
+                <ul>
+                    <li>setXXX(position, value)</li>
+                    <li>setObject(position, value, type)</li>
+                </ul>
+            </li>
+            <li>
+                <p>A primeira posição da <i>query</i> começa com o valor 1.</p>
+            </li>
+        </ul>
+
+        <img class="w-768" alt="" src="../images/database/prepared.png" />
+
+    </main>
+
+</body>
+
+</html>

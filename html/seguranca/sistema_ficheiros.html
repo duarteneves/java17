@@ -1,0 +1,72 @@
+<html lang="pt">
+
+<head>
+
+    <title>Java SE 17</title>
+    
+    <meta charset="utf-8">
+    <meta name="author" content="Duarte Neves">
+
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="seguranca.html">Anterior</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       
+        <h1>Sistema de ficheiros</h1>
+
+        <h2><i>Directory traversal attack</i></h2>
+
+        <ul>
+            <li>
+                <p>O uso <i>paths</i> relativos no acesso ao sistema de ficheiros pode ser perigoso,
+                    pois permite aceder a diretorias e ficheiros fora da diretoria raíz da aplicação.</p>
+            </li>
+
+            <li>
+                <p>Em vez de caminhos relativos, devemos usar os <b>canonical path</b>.
+                    Para evitar o uso de caminhos relativos podemos usar os os seguintes métodos da classe <b>java.nio.Path</b>:</p>
+                <ul>
+                    <li><b>normalize</b></li>
+                    <li><b>toRealPath</b> (criação de <i>symbolic links</i>)</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2><i>DoS</i></h2>
+
+        <ul>
+            <li>
+                <p>Tipicamente este género de ataques carateriza-se por provocar aà aplicação processos demorados e recorrentes,
+                    partindo deste princípio são aconcelháveis as seguintes ações:
+                </p>
+                <ul>
+                    <li>monitorizar o nº de operações de <i>input / output</i> sobre o sistema de ficheiros</li>
+                    <li>verificar a capacidade do disco no servidor</li>
+                </ul>
+            </li>
+            <li>
+                <p>Para prevenir cenários anteriores a equipa de desenvolvimento deve:</p>
+                <ul>
+                    <li>terminar operações que passem para lá de uma determinada quantidade de dados processada</li>
+                    <li>definir um <i>timeout</i> para realizar a operação e assim libertar o recurso</li>
+                </ul>
+            </li>
+        </ul>
+
+    </main>
+
+</body>
+
+</html>

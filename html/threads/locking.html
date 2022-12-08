@@ -1,0 +1,61 @@
+<html lang="pt">
+
+<head>
+
+    <title>Java SE 17</title>
+    
+    <meta charset="utf-8">
+    <meta name="author" content="Duarte Neves">
+
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="threads.html">Anterior</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       
+        <h1>Lock</h1>
+
+        <ul>
+            <li>
+                <p>Quando trabalhamos com mais do que uma <i>thread</i> podem surgir problemas de corrência no acesso 
+                    a variáveis e objetos. Lembra-se, não é possível controlar a ordem de execução das diferentes <i>threads</i>.</p>
+                <ul>
+                    <li><b><i>starvation</i></b> - <i>thread</i> fica em espera por um recurso bloqueado por outra <i>thread</i> cuja lógica demora um tempo considerável</li>
+                    <li><b><i>livelock</i></b> - <i>threads</i> entram num ciclo infinito esperando a confirmação que uma delas termine</li>
+                    <li><b><i>deadlock</i></b> - duas ou maios <i>threads</i> ficam bloqueadas para sempre esperando uma à outra</li>
+                </ul>
+            </li>
+        </ul>
+
+        <img class="w-768" alt="" src="../images/threads/locking.png" />
+
+        <ul>
+            <li>
+                <p>Cenários difícies de reproduzir em ambiente local ou testes, sem recorrer a ferramentas como o JMeter,
+                    e mesmo dessa forma não é garantido.</p>
+            </li>
+            <li>
+                <p>Praticametne difícl fazer <i>debug</i>, uma vez que a partir desse momento estamos também a usar uma 
+                    <i>thread</i> de <i>debug</i>.</p>
+            </li>
+            <li>
+                <p>Então como podemos eviar estes problemas?</p>
+            </li>
+        </ul>
+
+    </main>
+
+</body>
+
+</html>

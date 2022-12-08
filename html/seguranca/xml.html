@@ -1,0 +1,58 @@
+<html lang="pt">
+
+<head>
+
+    <title>Java SE 17</title>
+    
+    <meta charset="utf-8">
+    <meta name="author" content="Duarte Neves">
+
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="seguranca.html">Anterior</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       
+        <h1>XML</h1>
+
+        <ul>
+            <li>
+                <p>E como não há duas sempre três, é possível também a injeção de XML.</p>
+            </li>
+            <li>
+                <p>Não é tão comum como as anteriores, mas é igualmente possível através da definição dos ficheiros XML
+                    que contêm entidades ou <i>namespaces</i>.</p>
+            </li>
+            <li>
+                <p>Desta forma é possível:</p>
+                <ul>
+                    <li>efetuar referências recursivas provocando ciclos infinitos</li>
+                    <li>adicionar url maliciosos</li>
+                    <li>integrar outros ficheiros XML maliciosos</li>
+                </ul>
+            </li>
+            <li>
+                <p>Para previnir estes ataques deve-se:</p>
+                <ul>
+                    <li>parar o processo de <i>parse</i> de XML quando são detados <i>tags</i> e valores inesperados</li>
+                    <li>usar bibliotecas <i>open source</i> (OWASP) que permite sanitizar os dados XML</li>
+                </ul>
+            </li>
+        </ul>
+
+    </main>
+
+</body>
+
+</html>

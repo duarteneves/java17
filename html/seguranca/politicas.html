@@ -1,0 +1,63 @@
+<html lang="pt">
+
+<head>
+
+    <title>Java SE 17</title>
+    
+    <meta charset="utf-8">
+    <meta name="author" content="Duarte Neves">
+
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="seguranca.html">Anterior</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       
+        <h1>Políticas de Segurança</h1>
+
+        <ul>
+            <li>
+                <p>É possível definir políticas de segurança para restringir o acesso ao código e recursos da aplicação.</p>
+            </li>
+
+            <li>
+                <p>A definição destas políticas deve estar presente na aplicação Java, atrvés da definição do ficheiro
+                    <b>java.policy</b>, mas também na instalação Java do servidor através da atualização do ficheiro 
+                    <b>java.security</b>.</p>
+            </li>
+            <li>
+                <p>O ficheiro <b>java.security</b> é usado na configuração de:</p>
+                <ul>
+                    <li>definições gerais de segurança</li>
+                    <li>certificados</li>
+                    <li>políticas de segurança</li>
+                </ul>
+            </li>
+            <li>
+                <p>O ficheiro <b>java.policy</b> permite a definição de:</p>
+                <ul>
+                    <li>permissões de comunicação</li>
+                    <li>permissões a recursos da aplicação ou servidor</li>
+                    <li>assinar o artefacto (jar) digitalmente</li>
+                </ul>
+            </li>
+        </ul>
+
+        <img class="w-768" alt="" src="../images/seguranca/politicas.png" />
+
+    </main>
+
+</body>
+
+</html>
